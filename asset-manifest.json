@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/artesanodesign_web/static/css/main.9a5c6096.css",
+    "main.js": "/artesanodesign_web/static/js/main.054167c1.js",
+    "index.html": "/artesanodesign_web/index.html",
+    "main.9a5c6096.css.map": "/artesanodesign_web/static/css/main.9a5c6096.css.map",
+    "main.054167c1.js.map": "/artesanodesign_web/static/js/main.054167c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a5c6096.css",
+    "static/js/main.054167c1.js"
+  ]
+}
