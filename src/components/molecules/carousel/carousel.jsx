@@ -1,13 +1,12 @@
 import React from "react";
 
-import './carousel.scss';
 
 import Carousel from "react-bootstrap/Carousel";
 import Image from "../../atoms/image/image";
 
 const carousel = ({carouselItems}) => {
   return (
-    <Carousel className="ad-carousel-width" fade={true}>
+    <Carousel fade={true}>
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
           <Image

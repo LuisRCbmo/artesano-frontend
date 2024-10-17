@@ -1,19 +1,5 @@
 .ad-carousel-container {
-
-  $aspect-ratio: 16 / 9;
-    &-center-content {
-      display: flex;
-      justify-content: center;
-
-    @media (min-width: 768px) and (max-width: 1400px) {
-      width: 900px;
-      height: 900px / $aspect-ratio; // Calcula el height basado en el nuevo ancho
-    }
-
-    @media (max-width: 768px) {
-      width: 100%; 
-      height: calc(100% / $aspect-ratio); 
-    }
-    }
+    padding: 0px;
+  
   }
   
