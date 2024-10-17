@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Images from '../../atoms/images/images';
+import Image from '../../atoms/image/image';
 import Navbar from '../../molecules/navbars/navbar';
 
 const header = ({src, navItems}) => {
   return (
     <div>
-      <Images src={src}/>
+      <Image src={src} ad_className="ad-img-logo-1"/>
       <Navbar navItems={navItems}/>
     </div>
   )
