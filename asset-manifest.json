@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/artesanodesign_web/static/css/main.9a5c6096.css",
-    "main.js": "/artesanodesign_web/static/js/main.f80fa20a.js",
-    "index.html": "/artesanodesign_web/index.html",
-    "main.9a5c6096.css.map": "/artesanodesign_web/static/css/main.9a5c6096.css.map",
-    "main.f80fa20a.js.map": "/artesanodesign_web/static/js/main.f80fa20a.js.map"
+    "main.css": "/static/css/main.32c4175f.css",
+    "main.js": "/static/js/main.770f6f47.js",
+    "index.html": "/index.html",
+    "main.32c4175f.css.map": "/static/css/main.32c4175f.css.map",
+    "main.770f6f47.js.map": "/static/js/main.770f6f47.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a5c6096.css",
-    "static/js/main.f80fa20a.js"
+    "static/css/main.32c4175f.css",
+    "static/js/main.770f6f47.js"
   ]
 }
