@@ -4,11 +4,9 @@ import './carousel.scss';
 
 import Carousel from "react-bootstrap/Carousel";
 import Image from "../../atoms/image/image";
-import { Container } from "react-bootstrap";
 
 const carousel = ({carouselItems}) => {
   return (
-    <Container className="ad-carousel-center-content">
     <Carousel className="ad-carousel-width">
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
@@ -24,7 +22,6 @@ const carousel = ({carouselItems}) => {
         </Carousel.Item>
       ))}
     </Carousel>
-    </Container>
   );
 };
 

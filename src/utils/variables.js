@@ -1,67 +1,69 @@
-// variables.js
+// imagenes
 export const src_logo_header = "https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/syasxv2nljavurgx0aqh";
 
+// elementos del navbar
 export const navItems_info = [
-    { name: "Inicio", href: "#home" },
+    { name: "Inicio", href: "#" },
     {
       title: "Ellas",
       items: [
-        { name: "Todos los productos", href: "#url" },
-        { name: "Carteras", href: "#url" },
-        { name: "Bandoleras", href: "#url" },
-        { name: "Pecehras", href: "#url" },
-        { name: "Morrales", href: "#url" },
-        { name: "Mochilas", href: "#url" },
-        { name: "Billeteras", href: "#url" },
-        { name: "Porta documentos", href: "#url" },
-        { name: "Mandiles", href: "#url" }
+        { name: "Todos los productos", href: "#" },
+        { name: "Carteras", href: "#" },
+        { name: "Bandoleras", href: "#" },
+        { name: "Pecehras", href: "#" },
+        { name: "Morrales", href: "#" },
+        { name: "Mochilas", href: "#" },
+        { name: "Billeteras", href: "#" },
+        { name: "Porta documentos", href: "#" },
+        { name: "Mandiles", href: "#" }
       ],
     },
     {
       title: "Ellos",
       items: [
-        { name: "Todos los productos", href: "#url" },
-        { name: "Maletines", href: "#url" },
-        { name: "Morrales", href: "#url" },
-        { name: "Cinturones", href: "#url" },
-        { name: "Billeteras", href: "#url" },
-        { name: "Porta documentos", href: "#url" },
-        { name: "Porta herramientas", href: "#url" },
-        { name: "Neceses", href: "#url" },
-        { name: "Misceláneos", href: "#url" },
-        { name: "Mandiles", href: "#url" },
-        { name: "Estuches de chef", href: "#url" },
-        { name: "LLaveros", href: "#url" },
+        { name: "Todos los productos", href: "#" },
+        { name: "Maletines", href: "#" },
+        { name: "Morrales", href: "#" },
+        { name: "Cinturones", href: "#" },
+        { name: "Billeteras", href: "#" },
+        { name: "Porta documentos", href: "#" },
+        { name: "Porta herramientas", href: "#" },
+        { name: "Neceses", href: "#" },
+        { name: "Misceláneos", href: "#" },
+        { name: "Mandiles", href: "#" },
+        { name: "Estuches de chef", href: "#" },
+        { name: "Llaveros", href: "#" },
       ],
     },
     {
       title: "Corporativa",
       items: [
-        { name: "Desk Pad", href: "#url" },
-        { name: "Mouse Pad", href: "#url" },
-        { name: "Maletines", href: "#url" },
-        { name: "Porta documentos", href: "#url" },
-        { name: "Porta vasos", href: "#url" },
-        { name: "Llaveros", href: "#url" },
-        { name: "Neceses", href: "#url" },
+        { name: "Desk Pad", href: "#" },
+        { name: "Mouse Pad", href: "#" },
+        { name: "Maletines", href: "#" },
+        { name: "Porta documentos", href: "#" },
+        { name: "Porta vasos", href: "#" },
+        { name: "Llaveros", href: "#" },
+        { name: "Neceses", href: "#" },
       ],
     },
     {
       title: "Ecotote",
       items: [
-        { name: "Todos los productos", href: "#url/3.1" },
+        { name: "Todos los productos", href: "#" },
       ],
     },
     {
       title: "Servicios",
       items: [
-        { name: "Trabajos personalizados para empresas", href: "#url/3.1" },
+        { name: "Trabajos personalizados para empresas", href: "#" },
       ],
     },
-    { name: "Contáctanos", href: "#contact" },
-    { name: "Conócenos", href: "#about" },
+    { name: "Contáctanos", href: "#" },
+    { name: "Conócenos", href: "#" },
   ];
   
+  // carousel
   export const carouselItems_info = [
     {
       src: "https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/samples/ecommerce/leather-bag-gray",
