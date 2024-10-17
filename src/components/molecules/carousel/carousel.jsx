@@ -7,7 +7,7 @@ import Image from "../../atoms/image/image";
 
 const carousel = ({carouselItems}) => {
   return (
-    <Carousel className="ad-carousel-width">
+    <Carousel className="ad-carousel-width" fade={true}>
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
           <Image

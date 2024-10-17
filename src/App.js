@@ -7,16 +7,22 @@ import {
 } from "./utils/variables";
 
 import Header from "./components/organism/header/header";
-import Container from "react-bootstrap/Container";
 import CarouselSection from "./components/organism/carouselSection/carouselSection";
+import Card from "./components/molecules/card/card";
+import Container from 'react-bootstrap/Container';
+
+// <Card type="product"/>
 
 function App() {
   return (
     <div className="App">
       <Header src={src_logo_header} navItems={navItems_info} />
+      <CarouselSection carouselItems={carouselItems_info} />
       <Container>
-        <CarouselSection carouselItems={carouselItems_info} />
+      
+
       </Container>
+
     </div>
   );
 }

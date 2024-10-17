@@ -1,0 +1,18 @@
+.ad-card {
+    &-product {
+      $product-width: 320px;
+      $product-aspect-ratio: 16 / 9;
+
+      max-width: $product-width;
+        border: 2px black;
+
+      &-img {
+        max-width: $product-width;
+        height: calc(320px / $product-aspect-ratio);
+      }
+  
+      &-body {
+        width: 320px;
+      }
+    }
+}
