@@ -1,13 +1,14 @@
 import './App.css';
 
-import Images from './components/atoms/images/images';
-import Navbar from './components/molecules/navbars/navbar';
+import { src_logo_header, navItems_info } from './utils/variables'; 
+
+
+import Header from './components/organism/header/header';
 
 function App() {
   return (
     <div className="App">
-      <Images src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/syasxv2nljavurgx0aqh"/>
-      <Navbar/>
+      <Header src={src_logo_header} navItems={navItems_info}/>
     </div>
   );
 }
