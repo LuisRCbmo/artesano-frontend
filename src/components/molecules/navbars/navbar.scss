@@ -12,4 +12,8 @@ $primary-color: purple;
   &-item-light {
     --bs-nav-link-color: white;
   }
+
+  &-text-start{
+    text-align: start;
+  }
 }

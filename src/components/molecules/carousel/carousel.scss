@@ -1,5 +1,20 @@
 .ad-carousel {
-  &-caption-light {
-    color: white;
+  &-width {
+    width: 1317px;
+    height: 691px;
+
+    @media (min-width: 768px) and (max-width: 1400px) {
+      width: 900px;  
+      height: 472px;  
+    }
+
+    @media (max-width: 768px) {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  &-center-content {
+    display: flex;
+    justify-content: center;
   }
 }

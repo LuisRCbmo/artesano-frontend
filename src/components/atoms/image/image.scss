@@ -1,23 +1,36 @@
-// styles.scss
+$aspect-ratio: 16 / 9; 
 
-// Variables
-$primary-color: purple;
-
-// Estilos personalizados para el navbar
 .ad-img {
   &-logo-1 {
     width: 344px;
     height: 102px;
-    margin: 32px 0px;
+    margin: 20px 0px;
+
+    @media (min-width: 768px) and (max-width: 1400px) {
+      width: 280px;
+      height: auto; 
+      margin: 16px 0px;
+    }
+
+    @media (max-width: 768px) {
+      width: 200px;
+      height: auto;
+      margin: 12px 0px;
+    }
   }
 
   &-carousel {
-    width: 1317px;
-    height: 691px;
-  }
+    width: 100%;
+    height: calc(100% / $aspect-ratio); 
 
+    @media (min-width: 768px) and (max-width: 1400px) {
+      width: 900px;
+      height: 900px / $aspect-ratio; // Calcula el height basado en el nuevo ancho
+    }
 
-  &-logo-2 {
-    --bs-nav-link-color: white;
+    @media (max-width: 768px) {
+      width: 100%; 
+      height: calc(100% / $aspect-ratio); 
+    }
   }
 }

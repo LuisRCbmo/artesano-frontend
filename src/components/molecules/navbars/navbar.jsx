@@ -23,11 +23,12 @@ const navbar = ({ navItems }) => {
                   <NavDropdown
                     title={navGroup.title}
                     id={`nav-dropdown-${index}`}
-                    className="ad-navbar-item-light"
+                    className="ad-navbar-item-light
+                    ad-navbar-text-start"
                     key={index}
                   >
                     {navGroup.items.map((item, itemIndex) => (
-                      <NavDropdown.Item href={item.href} key={itemIndex}>
+                      <NavDropdown.Item href={item.href} key={itemIndex} >
                         {item.name}
                       </NavDropdown.Item>
                     ))}
@@ -37,7 +38,8 @@ const navbar = ({ navItems }) => {
               return (
                 <Nav.Link
                   href={navGroup.href}
-                  className="ad-navbar-item-light"
+                  className="ad-navbar-item-light
+                  ad-navbar-text-start"
                   key={index}
                 >
                   {navGroup.name}

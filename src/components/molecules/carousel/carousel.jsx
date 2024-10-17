@@ -8,8 +8,8 @@ import { Container } from "react-bootstrap";
 
 const carousel = ({carouselItems}) => {
   return (
-    <Container>
-    <Carousel>
+    <Container className="ad-carousel-center-content">
+    <Carousel className="ad-carousel-width">
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
           <Image

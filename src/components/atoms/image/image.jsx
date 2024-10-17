@@ -6,7 +6,7 @@ import './image.scss';
 const image = ({src, ad_className}) => {
   return (
     <div>
-      <Image src={src} alt="Descripción de la imagen" className={ad_className} rounded />
+      <Image src={src} alt="Descripción de la imagen" className={ad_className} />
     </div>
   )
 }
