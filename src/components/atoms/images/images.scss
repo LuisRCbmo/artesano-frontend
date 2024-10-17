@@ -1,0 +1,17 @@
+// styles.scss
+
+// Variables
+$primary-color: purple;
+
+// Estilos personalizados para el navbar
+.ad-img {
+  &-logo-1 {
+    width: 344px;
+    height: 102px;
+    margin: 32px 0px;
+  }
+
+  &-logo-2 {
+    --bs-nav-link-color: white;
+  }
+}
