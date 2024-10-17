@@ -1,0 +1,15 @@
+// styles.scss
+
+// Variables
+$primary-color: purple;
+
+// Estilos personalizados para el navbar
+.ad-navbar {
+  &-center-content {
+    justify-content: center;
+  }
+
+  &-item-light {
+    --bs-nav-link-color: white;
+  }
+}
