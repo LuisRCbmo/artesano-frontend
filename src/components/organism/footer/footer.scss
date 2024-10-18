@@ -1,8 +1,8 @@
 .ad-footer {
     &-bg{
         padding-top: 16px;
-        background-color: black;
-        height: 250px;
+        background-color: rgba(var(--bs-dark-rgb));
+        min-height: 250px;
         color: white;
 
     }

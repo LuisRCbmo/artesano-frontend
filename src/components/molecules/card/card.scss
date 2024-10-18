@@ -1,30 +1,21 @@
 .ad-card {
   &-product {
     margin: 10px auto;
-    width: 320px; // Default width
+    width: 320px;
 
     @media (max-width: 576px) {
-      // XS
       width: 150px;
     }
 
     @media (min-width: 576px) and (max-width: 768px) {
-      // SM
       width: 200px;
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
-      // MD
-      width: 250px;
-    }
-
     @media (min-width: 992px) and (max-width: 1200px) {
-      // LG
       width: 280px;
     }
 
     @media (min-width: 1200px) {
-      // XL
       width: 320px;
     }
 
@@ -38,10 +29,6 @@
 
       @media (min-width: 576px) and (max-width: 768px) {
         height: 145px;
-      }
-
-      @media (min-width: 768px) and (max-width: 992px) {
-        height: 165px;
       }
 
       @media (min-width: 992px) and (max-width: 1200px) {
@@ -59,20 +46,14 @@
     width: 530px;
 
     @media (max-width: 576px) {
-      // XS
       width: 250px;
       margin: 10px auto;
     }
 
     @media (min-width: 576px) and (max-width: 768px) {
-      // SM
       width: 400px;
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
-      // MD
-      width: 450px;
-    }
 
     @media (min-width: 992px) and (max-width: 1200px) {
       width: 480px;
@@ -92,10 +73,6 @@
 
       @media (min-width: 576px) and (max-width: 768px) {
         height: 200px;
-      }
-
-      @media (min-width: 768px) and (max-width: 992px) {
-        height: 264px;
       }
 
       @media (min-width: 992px) and (max-width: 1200px) {
