@@ -12,6 +12,7 @@ import Header from "./components/organism/header/header";
 import CarouselSection from "./components/organism/carouselSection/carouselSection";
 import ProductsSection from "./components/organism/productsSection/productsSection";
 import LinesSection from "./components/organism/linesSection/linesSection";
+import Footer from "./components/organism/footer/footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <CarouselSection carouselItems={carouselItems_info} />
       <ProductsSection products={products_info} />
       <LinesSection lines={lines_info}/>
+      <Footer/>
     </div>
   );
 }

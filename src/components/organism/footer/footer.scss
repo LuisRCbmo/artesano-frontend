@@ -1,0 +1,30 @@
+.ad-footer {
+    &-bg{
+        padding-top: 16px;
+        background-color: black;
+        height: 250px;
+        color: white;
+
+    }
+
+    &-p{
+        padding: 8px;
+
+    }
+
+    &-a{
+        text-decoration: none;
+        color: white;
+
+    }
+    
+    &-col-1{
+        padding-top: 32px;
+
+    }
+        
+    &-col-2{
+        padding-top: 8px;
+
+    }
+}
