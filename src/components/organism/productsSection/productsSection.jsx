@@ -12,7 +12,7 @@ const productsSection = ({ products }) => {
       <h1>Productos</h1>
       <Row>
         {products.map((product, index) => (
-          <Col key={index} xs={6} md={3}>
+          <Col key={index} xs={6} md={4}>
             <Card type="product" src={product.src} title={product.title}/>
           </Col>
         ))}

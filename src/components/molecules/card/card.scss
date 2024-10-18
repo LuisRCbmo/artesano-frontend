@@ -1,15 +1,102 @@
 .ad-card {
   &-product {
-    $product-aspect-ratio: 3 / 2; // Relación de aspecto 3:2
-    
-    $base-width: 320px; // Ancho base
-    max-width: $base-width; // Máximo ancho
+    margin: 10px auto;
+    width: 320px; // Default width
 
-    margin: 10px; // Margen alrededor del producto
+    @media (max-width: 576px) { // XS
+      width: 150px; 
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) { // SM
+      width: 200px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) { // MD
+      width: 250px; 
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) { // LG
+      width: 280px;
+    }
+
+    @media (min-width: 1200px) { // XL
+      width: 320px; 
+    }
 
     &-img {
-      max-width: $base-width; // Ancho máximo de la imagen
-      height: 66%; // Altura basada en la relación de aspecto
+      width: auto;
+      height: 211px; // Default height
+
+      @media (max-width: 576px) { // XS
+        height: 99px; 
+      }
+
+      @media (min-width: 576px) and (max-width: 768px) { // SM
+        height: 145px; 
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) { // MD
+        height: 165px; 
+      }
+
+      @media (min-width: 992px) and (max-width: 1200px) { // LG
+        height: 190px;
+      }
+
+      @media (min-width: 1200px) { // XL
+        height: 211px; 
+      }
+    }
+  }
+
+  &-line {
+    margin: 20px auto;
+    width: 530px; // Default width
+
+    @media (max-width: 576px) { // XS
+      width: 250px; 
+      margin: 10px auto;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) { // SM
+      width: 400px; 
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) { // MD
+      width: 450px; 
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) { // LG
+      width: 480px; 
+    }
+
+    @media (min-width: 1200px) { // XL
+      width: 530px; 
+    }
+
+    &-img {
+      width: auto;
+      height: 350px; // Default height
+
+      @media (max-width: 576px) { // XS
+        height: 165px; 
+      }
+
+      @media (min-width: 576px) and (max-width: 768px) { // SM
+        height: 200px; 
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) { // MD
+        height: 264px; 
+      }
+
+      @media (min-width: 992px) and (max-width: 1200px) { // LG
+        height: 300px; 
+      }
+
+      @media (min-width: 1200px) { // XL
+        height: 350px; 
+      }
     }
   }
 }

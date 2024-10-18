@@ -8,7 +8,6 @@ const card = ({ type, src, title}) => {
   return (
     <Card className={`ad-card-${type}`}>
       <Card.Img
-        variant="top"
         src={src}
         alt="imagen de producto"
         className={`ad-card-${type}-img`}

@@ -117,4 +117,22 @@ export const products_info = [
   }
 ];
 
+export const lines_info = [
+  {
+    src: "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
+    title: "Linea 1",
+  },
+  {
+    src: "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
+    title: "Linea 2",
+  },
+  {
+    src: "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
+    title: "Linea 3",
+  },
+  {
+    src: "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
+    title: "Linea 4",
+  }
+];
   
