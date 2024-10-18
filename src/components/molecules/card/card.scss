@@ -1,18 +1,15 @@
 .ad-card {
-    &-product {
-      $product-width: 320px;
-      $product-aspect-ratio: 16 / 9;
+  &-product {
+    $product-aspect-ratio: 3 / 2; // Relación de aspecto 3:2
+    
+    $base-width: 320px; // Ancho base
+    max-width: $base-width; // Máximo ancho
 
-      max-width: $product-width;
-        border: 2px black;
+    margin: 10px; // Margen alrededor del producto
 
-      &-img {
-        max-width: $product-width;
-        height: calc(320px / $product-aspect-ratio);
-      }
-  
-      &-body {
-        width: 320px;
-      }
+    &-img {
+      max-width: $base-width; // Ancho máximo de la imagen
+      height: 66%; // Altura basada en la relación de aspecto
     }
+  }
 }

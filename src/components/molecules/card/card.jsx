@@ -4,17 +4,17 @@ import "./card.scss";
 
 import Card from "react-bootstrap/Card";
 
-const card = ({ type }) => {
+const card = ({ type, src, title}) => {
   return (
     <Card className={`ad-card-${type}`}>
       <Card.Img
         variant="top"
-        src=""
+        src={src}
         alt="imagen de producto"
         className={`ad-card-${type}-img`}
       />
-      <Card.Body className={`ad-card-${type}-body`}>
-        <Card.Text>Producto</Card.Text>
+      <Card.Body>
+        <Card.Text>{title}</Card.Text>
       </Card.Body>
     </Card>
   );

@@ -12,7 +12,7 @@ const carousel = ({carouselItems}) => {
           <Image
             src={item.src}
             ad_className="ad-img-carousel"
-            alt={`Slide ${index + 1}`} // Para accesibilidad
+            alt={`Imagen #${index + 1}`}
           />
           <Carousel.Caption>
             <h3>{item.captionTitle}</h3>
