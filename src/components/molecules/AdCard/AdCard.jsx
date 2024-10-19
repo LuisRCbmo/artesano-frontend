@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./card.scss";
+import "./AdCard.scss";
 
 import Card from "react-bootstrap/Card";
 
-const card = ({ type, src, title}) => {
+const AdCard = ({ type, src, title}) => {
   return (
     <Card className={`ad-card-${type}`}>
       <Card.Img
@@ -19,4 +19,4 @@ const card = ({ type, src, title}) => {
   );
 };
 
-export default card;
+export default AdCard;

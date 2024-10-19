@@ -2,11 +2,11 @@ import React from 'react'
 
 import "./carouselSection.scss"
 
-import Carousel from '../../molecules/carousel/carousel'
+import AdCarousel from '../../molecules/AdCarousel/AdCarousel'
 const carouselSection = ({carouselItems}) => {
   return (
     <div  className='ad-carousel-container'>
-        <Carousel carouselItems={carouselItems}/>
+        <AdCarousel carouselItems={carouselItems}/>
     </div>
   )
 }

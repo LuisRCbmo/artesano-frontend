@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Card from "../../molecules/card/card";
+import AdCard from "../../molecules/AdCard/AdCard";
 
 const DynamicCatalog = ({ products_info }) => {
   const { lineName, categoryName } = useParams();
@@ -26,7 +26,7 @@ const DynamicCatalog = ({ products_info }) => {
       <Row>
         {filteredProducts.map((product, index) => (
           <Col key={index} xs={6} lg={4}>
-            <Card
+            <AdCard
               type="product"
               src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
               title={product.name}

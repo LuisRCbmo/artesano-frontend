@@ -4,7 +4,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "../../atoms/image/image";
 
-const carousel = ({carouselItems}) => {
+const AdCarousel = ({carouselItems}) => {
   return (
     <Carousel fade={true}>
       {carouselItems.map((item, index) => (
@@ -24,4 +24,4 @@ const carousel = ({carouselItems}) => {
   );
 };
 
-export default carousel;
+export default AdCarousel;
