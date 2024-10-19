@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/organism/header/header";
-import CarouselSection from "./components/organism/carouselSection/carouselSection";
-import ProductsSection from "./components/organism/productsSection/productsSection";
-import LinesSection from "./components/organism/linesSection/linesSection";
+import LandingPage from "./components/templates/landingPage";
 import Footer from "./components/organism/footer/footer";
 import Spinner from "react-bootstrap/Spinner";
 
@@ -32,7 +32,7 @@ function groupByLineAndType(products) {
 
 function getUniqueTypes(products) {
   const uniqueTypes = products.reduce((acc, product) => {
-    if (!acc.some(item => item.type === product.type)) {
+    if (!acc.some((item) => item.type === product.type)) {
       acc.push({ src: product.src, type: product.type });
     }
     return acc;
@@ -42,10 +42,12 @@ function getUniqueTypes(products) {
 
 function getUniqueLines(products) {
   const uniqueLines = products.reduce((acc, product) => {
-    const linesArray = Array.isArray(product.line) ? product.line : [product.line];
+    const linesArray = Array.isArray(product.line)
+      ? product.line
+      : [product.line];
 
     linesArray.forEach((line) => {
-      if (!acc.some(item => item.line === line)) {
+      if (!acc.some((item) => item.line === line)) {
         acc.push({ src: product.src, line: line });
       }
     });
@@ -79,28 +81,44 @@ function App() {
   const uniqueLines = getUniqueLines(data.products_info);
   const navItemsDynamic = Object.keys(groupedProducts).map((line) => ({
     title: line,
-    items: groupedProducts[line].map((type) => ({ name: type, href: `#${type}` }))
+    items: groupedProducts[line].map((type) => ({
+      name: type,
+      href: `#${type}`,
+    })),
   }));
 
   const staticNavItems = [
-    { "name": "Inicio", "href": "#" },
-    { "name": "Contáctanos", "href": "#" },
-    { "name": "Conócenos", "href": "#" }
+    { name: "Inicio", href: "#" },
+    { name: "Contáctanos", href: "#" },
+    { name: "Conócenos", href: "#" },
   ];
 
   const navItemsWithStatic = [
     staticNavItems[0],
     ...navItemsDynamic,
     staticNavItems[1],
-    staticNavItems[2]
+    staticNavItems[2],
   ];
 
   return (
     <div className="App">
       <Header src={data.src_logo_header} navItems={navItemsWithStatic} />
-      <CarouselSection carouselItems={data.carouselItems_info} />
-      <ProductsSection products={uniqueProductTypes} />
-      <LinesSection lines={uniqueLines} />
+
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <LandingPage
+                carouselItems_info={data.carouselItems_info}
+                productTypes_info={uniqueProductTypes}
+                lines_info={uniqueLines}
+              />
+            }
+          ></Route>
+        </Routes>
+      </BrowserRouter>
+
       <Footer footer_Info={data.footer_info} />
     </div>
   );
