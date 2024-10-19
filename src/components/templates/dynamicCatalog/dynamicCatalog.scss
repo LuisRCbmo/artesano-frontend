@@ -1,5 +1,14 @@
-.ad-dinamic-catalog{
-    &-container {
-        min-height: 512px;
+.ad-dinamic-catalog {
+  &-container {
+    min-height: 512px;
+
+    @media (min-width: 768px) and (max-width: 1400px) {
+        min-height: 560px;
+    
     }
+
+    @media (max-width: 768px) {
+        min-height: 608px;
+    }
+  }
 }
