@@ -17,7 +17,7 @@ const AdNavbar = ({ navItems }) => {
   };
 
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark" sticky="top">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse

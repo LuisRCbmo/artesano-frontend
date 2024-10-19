@@ -8,8 +8,8 @@ const landingPage = ({ carouselItems_info, productTypes_info, lines_info }) => {
   return (
     <>
       <CarouselSection carouselItems={carouselItems_info} />
-      <ProductsSection products={productTypes_info} />
       <LinesSection lines={lines_info} />
+      <ProductsSection products={productTypes_info} />
     </>
   );
 };

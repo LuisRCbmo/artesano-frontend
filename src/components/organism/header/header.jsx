@@ -5,10 +5,10 @@ import Navbar from '../../molecules/AdNavbar/AdNavbar';
 
 const header = ({src, navItems}) => {
   return (
-    <div>
+    <>
       <Image src={src} ad_className="ad-img-logo-1"/>
       <Navbar navItems={navItems}/>
-    </div>
+    </>
   )
 }
 
