@@ -57,8 +57,8 @@ const footer = ({footer_Info}) => {
           </Col>
           <Col className="ad-footer-col-1" xs={12} lg={3}>
             <h3>Redes sociales</h3>
-            <Container fluid>
-              <Row>
+            <Container  className="ad-footer-icons-container" fluid>
+              <Row className="ad-footer-icons-row">
                 <Col className="ad-footer-col-2">
                   <a
                     href={facebookLink}
