@@ -20,22 +20,114 @@
 
   "products_info": [
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
-      "title": "Producto 2",
-      "type": "Billeteras",
+      "name": "Wonder",
+      "category": "Carteras",
       "line": "Ellas"
     },
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
-      "title": "Producto 3",
-      "type": "Desk Pad",
-      "line": "Ellos"
+      "name": "Freedom",
+      "category": "Carteras",
+      "line": "Ellas"
     },
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
-      "title": "Producto 1",
-      "type": "Carteras",
-      "line": ["Ellas", "Ecotote"]
+      "name": "Freedom De Luxe",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Clasica",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Afrodita",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Venus",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Chic",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Neceser",
+      "category": "Carteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Sweety",
+      "category": "Bandolera",
+      "line": "Ellas"
+    },
+    {
+      "name": "Diva",
+      "category": "Bandolera",
+      "line": "Ellas"
+    },
+    {
+      "name": "Pechera",
+      "category": "Pechera",
+      "line": "Ellas"
+    },
+    {
+      "name": "Urbano",
+      "category": "Morral",
+      "line": "Ellas"
+    },
+    {
+      "name": "Travel",
+      "category": "Morral",
+      "line": "Ellas"
+    },
+    {
+      "name": "Travel",
+      "category": "Mochila",
+      "line": "Ellas"
+    },
+    {
+      "name": "Urbana",
+      "category": "Mochila",
+      "line": "Ellas"
+    },
+    {
+      "name": "Ecotote",
+      "category": "Ecotote",
+      "line": "Ellas"
+    },
+    {
+      "name": "Billetera simple",
+      "category": "Billeteras",
+      "line": "Ellas"
+    },
+    {
+      "name": "Porta Documentos",
+      "category": "Porta documentos",
+      "line": "Ellas"
+    },
+    {
+      "name": "Porta Tablet/Documentos",
+      "category": "Porta documentos",
+      "line": "Ellas"
+    },
+    {
+      "name": "Tarjetero",
+      "category": "Porta documentos",
+      "line": "Ellas"
+    },
+    {
+      "name": "Tarjetero",
+      "category": "Porta documentos",
+      "line": "Ellas"
+    },
+    {
+      "name": "Pro",
+      "category": "Mandiles",
+      "line": "Ellas"
     }
   ],
 
