@@ -90,9 +90,9 @@ function App() {
   }));
 
   const staticNavItems = [
-    { name: "Inicio", href: "#" },
-    { name: "Contáctanos", href: "#" },
-    { name: "Conócenos", href: "#" },
+    { name: "Inicio", route: "/" },
+    { name: "Contáctanos", route: "#" },
+    { name: "Conócenos", route: "#" },
   ];
 
   const navItemsWithStatic = [
@@ -101,6 +101,8 @@ function App() {
     staticNavItems[1],
     staticNavItems[2],
   ];
+
+
 
   return (
     <div className="App">
@@ -120,7 +122,7 @@ function App() {
 
           <Route
             path="/line/:lineTitle/productTitle/:productTitle"
-            element={<DynamicCatalog />}
+            element={<DynamicCatalog products_info={data.products_info} />}
           />
         </Routes>
       </BrowserRouter>

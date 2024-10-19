@@ -50,10 +50,10 @@ const AdNavbar = ({ navItems }) => {
               }
               return (
                 <Nav.Link
-                  href={navGroup.href}
                   className="ad-navbar-item-light
                   ad-navbar-text-start"
                   key={index}
+                  onClick={() => navigate(navGroup.route)}
                 >
                   {navGroup.name}
                 </Nav.Link>

@@ -13,7 +13,7 @@ const productsSection = ({ products }) => {
       <Row>
         {products.map((product, index) => (
           <Col key={index} xs={6} lg={4}>
-            <Card type="product" src={product.src} title={product.type}/>
+            <Card type="product" src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png" title={product.type}/>
           </Col>
         ))}
       </Row>

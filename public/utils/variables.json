@@ -20,19 +20,16 @@
 
   "products_info": [
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
       "title": "Producto 2",
       "type": "Billeteras",
       "line": "Ellas"
     },
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
       "title": "Producto 3",
       "type": "Desk Pad",
       "line": "Ellos"
     },
     {
-      "src": "https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png",
       "title": "Producto 1",
       "type": "Carteras",
       "line": ["Ellas", "Ecotote"]
