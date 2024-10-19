@@ -1,30 +1,43 @@
 .ad-footer {
-    &-bg{
-        padding-top: 16px;
-        background-color: rgba(var(--bs-dark-rgb));
-        min-height: 250px;
-        color: white;
+  &-bg {
+    padding-top: 16px;
+    background-color: rgba(var(--bs-dark-rgb));
+    height: 250px;
+    color: white;
 
+    @media (min-width: 768px) and (max-width: 1400px) {
+      width: 100%;
+      height: 350px;
     }
 
-    &-p{
-        padding: 8px;
-
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 450px;
     }
+  }
 
-    &-a{
-        text-decoration: none;
-        color: white;
+  &-icons-container {
+    display: flex;
+    justify-content: center;
+  }
 
-    }
-    
-    &-col-1{
-        padding-top: 32px;
+  &-icons-row {
+    width: 300px;
+  }
+  &-p {
+    padding: 8px;
+  }
 
-    }
-        
-    &-col-2{
-        padding-top: 8px;
+  &-a {
+    text-decoration: none;
+    color: white;
+  }
 
-    }
+  &-col-1 {
+    padding-top: 32px;
+  }
+
+  &-col-2 {
+    padding-top: 8px;
+  }
 }

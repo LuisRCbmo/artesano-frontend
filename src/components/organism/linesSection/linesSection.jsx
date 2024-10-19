@@ -16,7 +16,7 @@ const linesSection = ({lines}) => {
       <Row>
         {lines.map((line, index) => (
           <Col className='add-col-center-contend' key={index} xs={12} xl={6}>
-            <Card type="line" src={line.src} title={line.title}/>
+            <Card type="line" src={line.src} title={line.line}/>
           </Col>
         ))}
       </Row>

@@ -13,7 +13,7 @@ const productsSection = ({ products }) => {
       <Row>
         {products.map((product, index) => (
           <Col key={index} xs={6} lg={4}>
-            <Card type="product" src={product.src} title={product.title}/>
+            <Card type="product" src={product.src} title={product.type}/>
           </Col>
         ))}
       </Row>
