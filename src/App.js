@@ -14,7 +14,7 @@ function groupByLineAndType(products) {
   const groupedData = {};
 
   products.forEach((product) => {
-    const { line, type } = product;
+    const { line, category } = product;
 
     const linesArray = Array.isArray(line) ? line : [line];
 
@@ -23,8 +23,8 @@ function groupByLineAndType(products) {
         groupedData[singleLine] = [];
       }
 
-      if (!groupedData[singleLine].includes(type)) {
-        groupedData[singleLine].push(type);
+      if (!groupedData[singleLine].includes(category)) {
+        groupedData[singleLine].push(category);
       }
     });
   });
@@ -34,8 +34,8 @@ function groupByLineAndType(products) {
 
 function getUniqueTypes(products) {
   const uniqueTypes = products.reduce((acc, product) => {
-    if (!acc.some((item) => item.type === product.type)) {
-      acc.push({ src: product.src, type: product.type });
+    if (!acc.some((item) => item.category === product.category)) {
+      acc.push({ category: product.category });
     }
     return acc;
   }, []);
@@ -50,7 +50,7 @@ function getUniqueLines(products) {
 
     linesArray.forEach((line) => {
       if (!acc.some((item) => item.line === line)) {
-        acc.push({ src: product.src, line: line });
+        acc.push({line: line });
       }
     });
 
@@ -121,7 +121,7 @@ function App() {
           ></Route>
 
           <Route
-            path="/line/:lineTitle/productTitle/:productTitle"
+            path="/line/:lineName/category/:categoryName"
             element={<DynamicCatalog products_info={data.products_info} />}
           />
         </Routes>

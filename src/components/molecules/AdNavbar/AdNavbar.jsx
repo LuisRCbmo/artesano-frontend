@@ -12,8 +12,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const AdNavbar = ({ navItems }) => {
   const navigate = useNavigate();
 
-  const handleProductClick = (lineTitle, productTitle) => {
-    navigate(`/line/${lineTitle}/productTitle/${productTitle}`);
+  const handleProductClick = (lineName, categoryName) => {
+    navigate(`/line/${lineName}/category/${categoryName}`);
   };
 
   return (
