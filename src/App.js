@@ -4,7 +4,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/organism/header/header";
-import LandingPage from "./components/templates/landingPage";
+import LandingPage from "./components/templates/landingPage/landingPage";
+import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog";
+
 import Footer from "./components/organism/footer/footer";
 import Spinner from "react-bootstrap/Spinner";
 
@@ -102,9 +104,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header src={data.src_logo_header} navItems={navItemsWithStatic} />
-
       <BrowserRouter>
+        <Header src={data.src_logo_header} navItems={navItemsWithStatic} />
         <Routes>
           <Route
             path="/"
@@ -116,6 +117,11 @@ function App() {
               />
             }
           ></Route>
+
+          <Route
+            path="/line/:lineTitle/productTitle/:productTitle"
+            element={<DynamicCatalog />}
+          />
         </Routes>
       </BrowserRouter>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Image from '../../atoms/image/image';
-import Navbar from '../../molecules/navbars/navbar';
+import Navbar from '../../molecules/AdNavbar/AdNavbar';
 
 const header = ({src, navItems}) => {
   return (

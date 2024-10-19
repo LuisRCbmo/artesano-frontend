@@ -1,15 +1,23 @@
 import React from "react";
 
-import "./navbar.scss";
+import "./AdNavbar.scss";
+
+import { useNavigate } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const navbar = ({ navItems }) => {
+const AdNavbar = ({ navItems }) => {
+  const navigate = useNavigate();
+
+  const handleProductClick = (lineTitle, productTitle) => {
+    navigate(`/line/${lineTitle}/productTitle/${productTitle}`);
+  };
+
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark" >
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -28,7 +36,12 @@ const navbar = ({ navItems }) => {
                     key={index}
                   >
                     {navGroup.items.map((item, itemIndex) => (
-                      <NavDropdown.Item href={item.href} key={itemIndex} >
+                      <NavDropdown.Item
+                        key={itemIndex}
+                        onClick={() =>
+                          handleProductClick(navGroup.title, item.name)
+                        }
+                      >
                         {item.name}
                       </NavDropdown.Item>
                     ))}
@@ -53,4 +66,4 @@ const navbar = ({ navItems }) => {
   );
 };
 
-export default navbar;
+export default AdNavbar;
