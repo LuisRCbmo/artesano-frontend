@@ -9,7 +9,6 @@ import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog
 import Product from "./components/templates/product/product";
 import ContactPage from "./components/templates/contactPage/contactPage";
 
-import Footer from "./components/organism/footer/footer";
 import Spinner from "react-bootstrap/Spinner";
 
 function groupByLineAndType(products) {
@@ -112,7 +111,7 @@ function App() {
     staticNavItems[1],
     staticNavItems[2],
   ];
-  console.log(data.lines_info);
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -125,6 +124,7 @@ function App() {
                 carouselItems_info={data.carouselItems_info}
                 productTypes_info={uniqueProductTypes}
                 lines_info={uniqueLines}
+                footer_info={data.contact_info}
               />
             }
           ></Route>
@@ -135,6 +135,7 @@ function App() {
               <DynamicCatalog
                 products_info={data.products_info}
                 lines_info={data.lines_info}
+                footer_info={data.contact_info}
               />
             }
           />
@@ -144,17 +145,16 @@ function App() {
             element={
               <Product
                 products_info={data.products_info}
+                footer_info={data.contact_info}
               />
             }
           />
           <Route
-    path="/contact"
-    element={<ContactPage footer_Info={data.footer_info} />}
-  />
+            path="/contact"
+            element={<ContactPage contact_info={data.contact_info} />}
+          />
         </Routes>
       </BrowserRouter>
-
-      <Footer footer_Info={data.footer_info} />
     </div>
   );
 }

@@ -5,8 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./contactPage.scss";
 
-const ContactPage = ({ footer_Info }) => {
-  const { email, phone, cellphone, address, facebookLink, instagramLink, tiktokLink } = footer_Info;
+const ContactPage = ({ contact_info  }) => {
+  const { email, phone, cellphone, address, facebookLink, instagramLink, tiktokLink } = contact_info;
   const icon_size = 24;
 
   return (
