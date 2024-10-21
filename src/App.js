@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/organism/header/header";
 import LandingPage from "./components/templates/landingPage/landingPage";
 import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog";
+import Product from "./components/templates/product/product";
 
 import Footer from "./components/organism/footer/footer";
 import Spinner from "react-bootstrap/Spinner";
@@ -110,7 +111,7 @@ function App() {
     staticNavItems[1],
     staticNavItems[2],
   ];
-console.log(data.lines_info)
+  console.log(data.lines_info);
   return (
     <div className="App">
       <BrowserRouter>
@@ -133,6 +134,15 @@ console.log(data.lines_info)
               <DynamicCatalog
                 products_info={data.products_info}
                 lines_info={data.lines_info}
+              />
+            }
+          />
+
+          <Route
+            path="/:productName"
+            element={
+              <Product
+                products_info={data.products_info}
               />
             }
           />

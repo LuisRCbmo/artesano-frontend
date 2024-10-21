@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import "./dynamicCatalog.scss";
+import { useNavigate } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -12,10 +13,15 @@ import AdCard from "../../molecules/AdCard/AdCard";
 const DynamicCatalog = ({ products_info, lines_info }) => {
   const { lineName, categoryName } = useParams();
 
-  const line_descripction = lines_info.find(
-    (element) => element.name === lineName
-  )?.description || "";  
-  
+  const navigate = useNavigate();
+
+  const handleProductClick = (productName) => {
+    navigate(`/${productName}`);
+  };
+
+  const line_descripction =
+    lines_info.find((element) => element.name === lineName)?.description || "";
+
   const filteredProducts = products_info.filter((product) => {
     const linesArray = Array.isArray(product.line)
       ? product.line
@@ -45,6 +51,7 @@ const DynamicCatalog = ({ products_info, lines_info }) => {
               type="product"
               src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
               title={product.name}
+              onClick={() => handleProductClick(product.name)}
             />
           </Col>
         ))}

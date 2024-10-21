@@ -37,113 +37,128 @@
     }
   ],
 
-  "products_info": [
-    {
-      "name": "Wonder",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Freedom",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Freedom De Luxe",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Clasica",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Afrodita",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Venus",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Chic",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Neceser",
-      "category": "Carteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Sweety",
-      "category": "Bandolera",
-      "line": "Ellas"
-    },
-    {
-      "name": "Diva",
-      "category": "Bandolera",
-      "line": "Ellas"
-    },
-    {
-      "name": "Pechera",
-      "category": "Pechera",
-      "line": "Ellas"
-    },
-    {
-      "name": "Urbano",
-      "category": "Morral",
-      "line": "Ellas"
-    },
-    {
-      "name": "Travel",
-      "category": "Morral",
-      "line": "Ellas"
-    },
-    {
-      "name": "Travel",
-      "category": "Mochila",
-      "line": "Ellas"
-    },
-    {
-      "name": "Urbana",
-      "category": "Mochila",
-      "line": "Ellas"
-    },
-    {
-      "name": "Billetera simple",
-      "category": "Billeteras",
-      "line": "Ellas"
-    },
-    {
-      "name": "Porta Documentos",
-      "category": "Porta documentos",
-      "line": "Ellas"
-    },
-    {
-      "name": "Porta Tablet/Documentos",
-      "category": "Porta documentos",
-      "line": "Ellas"
-    },
-    {
-      "name": "Tarjetero",
-      "category": "Porta documentos",
-      "line": "Ellas"
-    },
-    {
-      "name": "Tarjetero",
-      "category": "Porta documentos",
-      "line": "Ellas"
-    },
-    {
-      "name": "Pro",
-      "category": "Mandiles",
-      "line": "Ellas"
-    }
-  ],
+ "products_info": [
+  {
+    "name": "Wonder",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Una cartera elegante y versátil para cualquier ocasión."
+  },
+  {
+    "name": "Freedom",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Cartera compacta con estilo único y moderno."
+  },
+  {
+    "name": "Freedom De Luxe",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Una versión de lujo de la clásica Freedom."
+  },
+  {
+    "name": "Clasica",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "La cartera ideal para un estilo atemporal."
+  },
+  {
+    "name": "Afrodita",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Cartera inspirada en la diosa del amor y la belleza."
+  },
+  {
+    "name": "Venus",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Una cartera diseñada para destacar en cualquier evento."
+  },
+  {
+    "name": "Chic",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Cartera con diseño sofisticado y moderno."
+  },
+  {
+    "name": "Neceser",
+    "category": "Carteras",
+    "line": "Ellas",
+    "description": "Práctico neceser para llevar tus esenciales."
+  },
+  {
+    "name": "Sweety",
+    "category": "Bandolera",
+    "line": "Ellas",
+    "description": "Bandolera compacta para un look casual."
+  },
+  {
+    "name": "Diva",
+    "category": "Bandolera",
+    "line": "Ellas",
+    "description": "Bandolera con estilo elegante y femenino."
+  },
+  {
+    "name": "Pechera",
+    "category": "Pechera",
+    "line": "Ellas",
+    "description": "Una pechera práctica y funcional para el día a día."
+  },
+  {
+    "name": "Urbano",
+    "category": "Morral",
+    "line": "Ellas",
+    "description": "Morral versátil para acompañarte en cualquier aventura."
+  },
+  {
+    "name": "Travel",
+    "category": "Morral",
+    "line": "Ellas",
+    "description": "El morral perfecto para tus viajes cortos."
+  },
+  {
+    "name": "Travel",
+    "category": "Mochila",
+    "line": "Ellas",
+    "description": "Mochila de viaje resistente y espaciosa."
+  },
+  {
+    "name": "Urbana",
+    "category": "Mochila",
+    "line": "Ellas",
+    "description": "Mochila ideal para uso urbano y diario."
+  },
+  {
+    "name": "Billetera simple",
+    "category": "Billeteras",
+    "line": "Ellas",
+    "description": "Una billetera simple y compacta para lo esencial."
+  },
+  {
+    "name": "Porta Documentos",
+    "category": "Porta documentos",
+    "line": "Ellas",
+    "description": "Porta documentos elegante y funcional."
+  },
+  {
+    "name": "Porta Tablet/Documentos",
+    "category": "Porta documentos",
+    "line": "Ellas",
+    "description": "Perfecto para llevar tus documentos y tablet en un solo lugar."
+  },
+  {
+    "name": "Tarjetero",
+    "category": "Porta documentos",
+    "line": "Ellas",
+    "description": "Un tarjetero compacto para un fácil acceso a tus tarjetas."
+  },
+  {
+    "name": "Pro",
+    "category": "Mandiles",
+    "line": "Ellas",
+    "description": "Mandil profesional de alta calidad."
+  }
+],
 
   "footer_info": {
     "email": "micorreo@gmail.com",
