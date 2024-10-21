@@ -7,6 +7,7 @@ import Header from "./components/organism/header/header";
 import LandingPage from "./components/templates/landingPage/landingPage";
 import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog";
 import Product from "./components/templates/product/product";
+import ContactPage from "./components/templates/contactPage/contactPage";
 
 import Footer from "./components/organism/footer/footer";
 import Spinner from "react-bootstrap/Spinner";
@@ -101,7 +102,7 @@ function App() {
 
   const staticNavItems = [
     { name: "Inicio", route: "/" },
-    { name: "Contáctanos", route: "#" },
+    { name: "Contáctanos", route: "/contact" },
     { name: "Conócenos", route: "#" },
   ];
 
@@ -146,6 +147,10 @@ function App() {
               />
             }
           />
+          <Route
+    path="/contact"
+    element={<ContactPage footer_Info={data.footer_info} />}
+  />
         </Routes>
       </BrowserRouter>
 
