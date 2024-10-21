@@ -2,13 +2,23 @@ import React from "react";
 
 import "./linesSection.scss";
 
+import { useNavigate } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import AdCard from "../../molecules/AdCard/AdCard";
 
-const linesSection = ({ lines }) => {
+const LinesSection = ({ lines }) => {
+
+  const navigate = useNavigate();
+
+  const handleProductClick = (lineName) => {
+    navigate(`/line/${lineName}/category/all`);
+  };
+
+
   return (
     <Container className="ad-lines-section-container">
       <h1>Lineas de productos</h1>
@@ -28,6 +38,7 @@ const linesSection = ({ lines }) => {
               type="line"
               src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
               title={line.line}
+              onClick={() => handleProductClick(line.line)}
             />
           </Col>
         ))}
@@ -36,4 +47,4 @@ const linesSection = ({ lines }) => {
   );
 };
 
-export default linesSection;
+export default LinesSection;

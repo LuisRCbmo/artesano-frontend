@@ -16,7 +16,11 @@ const DynamicCatalog = ({ products_info }) => {
     const linesArray = Array.isArray(product.line)
       ? product.line
       : [product.line];
-    return linesArray.includes(lineName) && product.category === categoryName;
+    const lineMatch = lineName === "all" || linesArray.includes(lineName);
+    const categoryMatch =
+      categoryName === "all" || product.category === categoryName;
+
+    return lineMatch && categoryMatch;
   });
 
   return (

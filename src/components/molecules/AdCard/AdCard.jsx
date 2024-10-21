@@ -4,9 +4,9 @@ import "./AdCard.scss";
 
 import Card from "react-bootstrap/Card";
 
-const AdCard = ({ type, src, title}) => {
+const AdCard = ({ type, src, title, onClick}) => {
   return (
-    <Card className={`ad-card-${type}`}>
+    <Card className={`ad-card-${type}`} onClick={onClick}>
       <Card.Img
         src={src}
         alt="imagen de producto"

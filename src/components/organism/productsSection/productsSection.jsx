@@ -1,6 +1,8 @@
 import React from "react";
 
-import './productsSection.scss'
+import "./ProductsSection.scss";
+
+import { useNavigate } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,7 +10,12 @@ import Col from "react-bootstrap/Col";
 
 import AdCard from "../../molecules/AdCard/AdCard";
 
-const productsSection = ({ products }) => {
+const ProductsSection = ({ products }) => {
+  const navigate = useNavigate();
+
+  const handleProductClick = (categoryName) => {
+    navigate(`/line/all/category/${categoryName}`);
+  };
 
   return (
     <Container className="ad-products-section-container">
@@ -25,7 +32,12 @@ const productsSection = ({ products }) => {
       <Row>
         {products.map((product, index) => (
           <Col key={index} xs={6} lg={4}>
-            <AdCard type="product" src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png" title={product.category}/>
+            <AdCard
+              type="product"
+              src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
+              title={product.category}
+              onClick={() => handleProductClick(product.category)}
+            />
           </Col>
         ))}
       </Row>
@@ -33,4 +45,4 @@ const productsSection = ({ products }) => {
   );
 };
 
-export default productsSection;
+export default ProductsSection;

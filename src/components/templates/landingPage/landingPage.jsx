@@ -1,5 +1,4 @@
 import React from "react";
-
 import CarouselSection from "../../organism/carouselSection/carouselSection";
 import ProductsSection from "../../organism/productsSection/productsSection";
 import LinesSection from "../../organism/linesSection/linesSection";
