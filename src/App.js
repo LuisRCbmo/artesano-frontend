@@ -50,7 +50,7 @@ function getUniqueLines(products) {
 
     linesArray.forEach((line) => {
       if (!acc.some((item) => item.line === line)) {
-        acc.push({line: line });
+        acc.push({ line: line });
       }
     });
 
@@ -81,12 +81,21 @@ function App() {
   const groupedProducts = groupByLineAndType(data.products_info);
   const uniqueProductTypes = getUniqueTypes(data.products_info);
   const uniqueLines = getUniqueLines(data.products_info);
-  const navItemsDynamic = Object.keys(groupedProducts).map((line) => ({
-    title: line,
-    items: groupedProducts[line].map((type) => ({
-      name: type,
-      href: `#${type}`,
-    })),
+
+  const filteredLines = data.lines_info.map((line) => ({
+    name: line.name,
+    description: line.description,
+    categories: groupedProducts[line.name] || [],
+  }));
+
+  const navItemsDynamic = filteredLines.map((line) => ({
+    title: line.name,
+    items: [
+      { name: "Todos los productos" },
+      ...line.categories.map((category) => ({
+        name: category,
+      })),
+    ],
   }));
 
   const staticNavItems = [
@@ -101,9 +110,7 @@ function App() {
     staticNavItems[1],
     staticNavItems[2],
   ];
-
-
-
+console.log(data.lines_info)
   return (
     <div className="App">
       <BrowserRouter>
@@ -122,7 +129,12 @@ function App() {
 
           <Route
             path="/line/:lineName/category/:categoryName"
-            element={<DynamicCatalog products_info={data.products_info} />}
+            element={
+              <DynamicCatalog
+                products_info={data.products_info}
+                lines_info={data.lines_info}
+              />
+            }
           />
         </Routes>
       </BrowserRouter>

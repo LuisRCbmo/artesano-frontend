@@ -39,7 +39,8 @@ const AdNavbar = ({ navItems }) => {
                       <NavDropdown.Item
                         key={itemIndex}
                         onClick={() =>
-                          handleProductClick(navGroup.title, item.name)
+                          handleProductClick(navGroup.title, item.name === "Todos los productos" ? "all" : item.name)
+
                         }
                       >
                         {item.name}

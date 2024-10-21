@@ -18,6 +18,25 @@
     }
   ],
 
+  "lines_info": [
+    {
+      "name": "Ellas",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+    },
+    {
+      "name": "Ellos",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+    },
+    {
+      "name": "Corporativo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+    },
+    {
+      "name": "Ecotote",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+    }
+  ],
+
   "products_info": [
     {
       "name": "Wonder",

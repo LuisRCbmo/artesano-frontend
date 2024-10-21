@@ -9,9 +9,13 @@ import Col from "react-bootstrap/Col";
 
 import AdCard from "../../molecules/AdCard/AdCard";
 
-const DynamicCatalog = ({ products_info }) => {
+const DynamicCatalog = ({ products_info, lines_info }) => {
   const { lineName, categoryName } = useParams();
 
+  const line_descripction = lines_info.find(
+    (element) => element.name === lineName
+  )?.description || "";  
+  
   const filteredProducts = products_info.filter((product) => {
     const linesArray = Array.isArray(product.line)
       ? product.line
@@ -25,8 +29,15 @@ const DynamicCatalog = ({ products_info }) => {
 
   return (
     <Container className="ad-dinamic-catalog-container">
-      <h1>Linea: {lineName}</h1>
-      <h2>Productos: {categoryName}</h2>
+      {lineName === "all" ? (
+        <></>
+      ) : (
+        <>
+          <h1>Linea: {lineName}</h1>
+          <p>{line_descripction} </p>
+        </>
+      )}
+      {categoryName === "all" ? <></> : <h2>Productos: {categoryName}</h2>}
       <Row>
         {filteredProducts.map((product, index) => (
           <Col key={index} xs={6} lg={4}>
