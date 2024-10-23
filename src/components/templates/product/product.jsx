@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AdCard from "../../molecules/AdCard/AdCard";
 import Footer from "../../organism/footer/footer";
+import Image from "../../atoms/image/image";
 
 const Product = ({ products_info, footer_info }) => {
   const { productName } = useParams();
@@ -24,10 +24,9 @@ const Product = ({ products_info, footer_info }) => {
       <Container className="ad-product-container">
         <Row>
           <Col xs={12} lg={6}>
-            <AdCard
-              type="product"
-              src={product.src || "default_image_url"}
-              title={product.name}
+            <Image
+              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.name.toLowerCase()}/1`}
+              ad_className="ad-img-product"
             />
           </Col>
           <Col xs={12} lg={6}>

@@ -51,7 +51,8 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
             <Col key={index} xs={6} lg={4}>
               <AdCard
                 type="product"
-                src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
+                src={
+                  `https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.name.toLowerCase()}/1`}
                 title={product.name}
                 onClick={() => handleProductClick(product.name)}
               />
