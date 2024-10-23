@@ -41,11 +41,11 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
           <></>
         ) : (
           <>
-            <h1>Linea: {lineName}</h1>
+            <h1>{lineName}</h1>
             <p>{line_descripction} </p>
           </>
         )}
-        {categoryName === "all" ? <></> : <h2>Productos: {categoryName}</h2>}
+        {categoryName === "all" ? <></> : <h2>{categoryName}</h2>}
         <Row>
           {filteredProducts.map((product, index) => (
             <Col key={index} xs={6} lg={4}>

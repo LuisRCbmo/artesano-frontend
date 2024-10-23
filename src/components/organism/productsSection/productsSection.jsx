@@ -34,7 +34,7 @@ const ProductsSection = ({ products }) => {
           <Col key={index} xs={6} lg={4}>
             <AdCard
               type="product"
-              src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
+              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/category/${product.category.toLowerCase()}`}
               title={product.category}
               onClick={() => handleProductClick(product.category)}
             />
