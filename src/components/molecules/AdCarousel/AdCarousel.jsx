@@ -11,13 +11,9 @@ const AdCarousel = ({carouselItems}) => {
         <Carousel.Item key={index}>
           <Image
             src={item.src}
-            ad_className="ad-img-carousel"
+            ad_className=""
             alt={`Imagen #${index + 1}`}
           />
-          <Carousel.Caption>
-            <h3>{item.captionTitle}</h3>
-            <p>{item.captionText}</p>
-          </Carousel.Caption>
         </Carousel.Item>
       ))}
     </Carousel>

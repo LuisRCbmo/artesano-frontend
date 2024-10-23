@@ -101,15 +101,13 @@ function App() {
 
   const staticNavItems = [
     { name: "Inicio", route: "/" },
-    { name: "Contáctanos", route: "/contact" },
-    { name: "Conócenos", route: "#" },
+    { name: "Contáctanos", route: "/contact" }
   ];
 
   const navItemsWithStatic = [
     staticNavItems[0],
     ...navItemsDynamic,
-    staticNavItems[1],
-    staticNavItems[2],
+    staticNavItems[1]
   ];
   
   return (
