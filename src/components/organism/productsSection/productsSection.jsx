@@ -21,13 +21,11 @@ const ProductsSection = ({ products }) => {
     <Container className="ad-products-section-container">
       <h1>Productos</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum
-        ac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel,
-        tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl.
-        Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo
-        vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio
-        nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac
-        ante ipsum primis in faucibus. Duis nec viverra nisl.
+      Nuestra colección de productos abarca una amplia variedad de accesorios de cuero, 
+  diseñados para combinar estilo y funcionalidad. Desde carteras y mochilas, hasta 
+  artículos personalizados para el día a día, cada pieza está hecha con materiales de 
+  la más alta calidad y cuidada atención a los detalles. Explora nuestras categorías 
+  y encuentra el accesorio perfecto que se adapte a tu estilo.
       </p>
       <Row>
         {products.map((product, index) => (

@@ -17,8 +17,22 @@ const AdNavbar = ({ navItems }) => {
   };
 
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-dark" sticky="top">
+    <Navbar
+      expand="lg"
+      bg="dark"
+      data-bs-theme="dark"
+      className="bg-body-dark"
+      sticky="top"
+    >
       <Container>
+        <Navbar.Brand className="ad-navbar-movile-hide">
+          <img
+            src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/logo-white"
+            alt="Logo"
+            style={{ width: "200px", height: "auto" }}
+          />
+        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
@@ -39,8 +53,12 @@ const AdNavbar = ({ navItems }) => {
                       <NavDropdown.Item
                         key={itemIndex}
                         onClick={() =>
-                          handleProductClick(navGroup.title, item.name === "Todos los productos" ? "all" : item.name)
-
+                          handleProductClick(
+                            navGroup.title,
+                            item.name === "Todos los productos"
+                              ? "all"
+                              : item.name
+                          )
                         }
                       >
                         {item.name}

@@ -1,4 +1,9 @@
 .ad-carousel-container {
-    padding: 0px;
+  padding: 0px;
+
+  &-no-display {
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
-  
+}

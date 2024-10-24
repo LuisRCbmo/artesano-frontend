@@ -7,7 +7,7 @@ import Footer from "../../organism/footer/footer";
 const landingPage = ({ carouselItems_info, productTypes_info, lines_info, footer_info }) => {
   return (
     <>
-      <CarouselSection carouselItems={carouselItems_info} />
+      <CarouselSection carouselItems={carouselItems_info} xs_hide={true} />
       <LinesSection lines={lines_info} />
       <ProductsSection products={productTypes_info} />
       <Footer footer_Info={footer_info} />

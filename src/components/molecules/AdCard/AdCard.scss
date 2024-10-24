@@ -5,7 +5,7 @@
     --bs-card-border-width: 0px !important;
 
     margin: 10px auto;
-    width: 320px;
+    width: 450px;
 
     @media (max-width: 576px) {
       width: 150px;
@@ -17,31 +17,6 @@
 
     @media (min-width: 992px) and (max-width: 1200px) {
       width: 280px;
-    }
-
-    @media (min-width: 1200px) {
-      width: 320px;
-    }
-
-    &-img {
-      width: auto;
-      height: 211px;
-
-      @media (max-width: 576px) {
-        height: 99px;
-      }
-
-      @media (min-width: 576px) and (max-width: 768px) {
-        height: 145px;
-      }
-
-      @media (min-width: 992px) and (max-width: 1200px) {
-        height: 190px;
-      }
-
-      @media (min-width: 1200px) {
-        height: 211px;
-      }
     }
   }
 
@@ -64,27 +39,6 @@
 
     @media (min-width: 1200px) {
       width: 530px;
-    }
-
-    &-img {
-      width: auto;
-      height: 350px;
-
-      @media (max-width: 576px) {
-        height: 165px;
-      }
-
-      @media (min-width: 576px) and (max-width: 768px) {
-        height: 200px;
-      }
-
-      @media (min-width: 992px) and (max-width: 1200px) {
-        height: 300px;
-      }
-
-      @media (min-width: 1200px) {
-        height: 350px;
-      }
     }
   }
 }

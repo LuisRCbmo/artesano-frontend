@@ -11,25 +11,22 @@ import Col from "react-bootstrap/Col";
 import AdCard from "../../molecules/AdCard/AdCard";
 
 const LinesSection = ({ lines }) => {
-
   const navigate = useNavigate();
 
   const handleProductClick = (lineName) => {
     navigate(`/line/${lineName}/category/all`);
   };
 
-
   return (
     <Container className="ad-lines-section-container">
       <h1>Lineas de productos</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum
-        ac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel,
-        tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl.
-        Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo
-        vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio
-        nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac
-        ante ipsum primis in faucibus. Duis nec viverra nisl.
+        Descubre nuestras líneas de productos, cada una diseñada cuidadosamente
+        para ofrecer una combinación perfecta de estilo, durabilidad y
+        funcionalidad. Desde accesorios elegantes hasta artículos más prácticos,
+        nuestras piezas de marroquinería artesanal están pensadas para adaptarse
+        a cada ocasión y a las necesidades de nuestros clientes. Explora y
+        encuentra el complemento perfecto que te acompañará por muchos años.
       </p>
       <Row>
         {lines.map((line, index) => (
