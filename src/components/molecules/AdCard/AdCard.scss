@@ -3,7 +3,7 @@
     --bs-card-border-radius: 0px !important;
     --bs-card-inner-border-radius: 0px !important;
     --bs-card-border-width: 0px !important;
-
+  
     margin: 10px auto;
     width: 450px;
 
@@ -21,6 +21,10 @@
   }
 
   &-line {
+    --bs-card-border-radius: 0px !important;
+    --bs-card-inner-border-radius: 0px !important;
+    --bs-card-border-width: 0px !important;
+  
     margin: 20px auto;
     width: 530px;
 

@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Header from "./components/organism/header/header";
 import LandingPage from "./components/templates/landingPage/landingPage";
 import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog";
 import Product from "./components/templates/product/product";
 import ContactPage from "./components/templates/contactPage/contactPage";
-
 import Spinner from "react-bootstrap/Spinner";
 
 function groupByLineAndType(products) {
@@ -16,7 +13,6 @@ function groupByLineAndType(products) {
 
   products.forEach((product) => {
     const { line, category } = product;
-
     const linesArray = Array.isArray(line) ? line : [line];
 
     linesArray.forEach((singleLine) => {
@@ -43,24 +39,6 @@ function getUniqueTypes(products) {
   return uniqueTypes;
 }
 
-function getUniqueLines(products) {
-  const uniqueLines = products.reduce((acc, product) => {
-    const linesArray = Array.isArray(product.line)
-      ? product.line
-      : [product.line];
-
-    linesArray.forEach((line) => {
-      if (!acc.some((item) => item.line === line)) {
-        acc.push({ line: line });
-      }
-    });
-
-    return acc;
-  }, []);
-
-  return uniqueLines;
-}
-
 function App() {
   const [data, setData] = useState(null);
 
@@ -81,7 +59,6 @@ function App() {
 
   const groupedProducts = groupByLineAndType(data.products_info);
   const uniqueProductTypes = getUniqueTypes(data.products_info);
-  const uniqueLines = getUniqueLines(data.products_info);
 
   const filteredLines = data.lines_info.map((line) => ({
     name: line.name,
@@ -109,7 +86,7 @@ function App() {
     ...navItemsDynamic,
     staticNavItems[1]
   ];
-  
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -121,7 +98,7 @@ function App() {
               <LandingPage
                 carouselItems_info={data.carouselItems_info}
                 productTypes_info={uniqueProductTypes}
-                lines_info={uniqueLines}
+                lines_info={data.lines_info}
                 footer_info={data.contact_info}
               />
             }

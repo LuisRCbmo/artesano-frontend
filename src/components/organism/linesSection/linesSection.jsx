@@ -34,8 +34,8 @@ const LinesSection = ({ lines }) => {
             <AdCard
               type="line"
               src="https://www.cotopaxi.com.ec/sites/default/files/2020-08/Gris_0.png"
-              title={line.line}
-              onClick={() => handleProductClick(line.line)}
+              title={line.name}
+              onClick={() => handleProductClick(line.name)}
             />
           </Col>
         ))}
