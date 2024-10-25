@@ -17,66 +17,134 @@
   "lines_info": [
     {
       "name": "Para Ellas",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+      "description": "Descubre nuestra colección especial para ellas, con una amplia variedad de carteras, mochilas y más, diseñadas para cada ocasión."
     },
     {
       "name": "Para Ellos",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+      "description": "Nuestra colección para ellos incluye maletines, morrales, cinturones y otros accesorios esenciales de marroquinería."
     },
     {
       "name": "Catalogo Corporativo",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+      "description": "Productos exclusivos para empresas que combinan diseño y funcionalidad, perfectos para el entorno corporativo."
     },
     {
       "name": "Linea Ecotote",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentumac ligula vitae volutpat. Sed risus leo, placerat eget turpis vel, tincidunt dictum turpis. Sed ut massa at eros dictum egestas sed a nisl. Morbi fermentum risus et dapibus tincidunt. Phasellus semper, justo vestibulum pharetra bibendum, mi turpis gravida sem, a elementum odio nunc id leo. Nulla eu interdum nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec viverra nisl"
+      "description": "Nuestra línea Ecotote está enfocada en productos ecológicos y sostenibles para un estilo de vida responsable."
     }
   ],
 
- "products_info": [
-  {
-    "name": "Wonder",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "Una cartera elegante y versátil para cualquier ocasión."
-  },
-  {
-    "name": "Freedom",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "Cartera compacta con estilo único y moderno."
-  },
-  {
-    "name": "Freedom De Luxe",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "Una versión de lujo de la clásica Freedom."
-  },
-  {
-    "name": "Clasica",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "La cartera ideal para un estilo atemporal."
-  },
-  {
-    "name": "Afrodita",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "Cartera inspirada en la diosa del amor y la belleza."
-  },
-  {
-    "name": "Venus",
-    "category": "Carteras",
-    "line": "Para Ellas",
-    "description": "Una cartera diseñada para destacar en cualquier evento."
-  }
-],
-
+  "products_info": [
+    {
+      "name": "Wonder",
+      "category": "Carteras",
+      "line": "Para Ellas",
+      "description": "Una cartera elegante y versátil que se adapta a cualquier ocasión, perfecta para llevar tus esenciales con estilo.",
+      "image": "Wonderv1"
+    },
+    {
+      "name": "Freedom",
+      "category": "Carteras",
+      "line": "Para Ellas",
+      "description": "Cartera compacta con un diseño moderno que combina funcionalidad y elegancia, ideal para el día a día.",
+      "image": "Freedomv1"
+    },
+    {
+      "name": "Freedom De Luxe",
+      "category": "Carteras",
+      "line": "Para Ellas",
+      "description": "Una versión de lujo de la clásica Freedom, elaborada con materiales de alta calidad para un toque sofisticado.",
+      "image": "Freedom De Luxev1"
+    },
+    {
+      "name": "Clasica",
+      "category": "Carteras",
+      "line": "Para Ellas",
+      "description": "La cartera ideal para quienes buscan un estilo atemporal, combinando diseño clásico con comodidad.",
+      "image": "Clasica v1"
+    },
+    {
+      "name": "Ejecutivo",
+      "category": "Maletines",
+      "line": "Para Ellos",
+      "description": "Maletín elegante y profesional, diseñado para el hombre moderno que necesita organización y estilo.",
+      "image": "Ejecutivov1"
+    },
+    {
+      "name": "Travel",
+      "category": "Maletines",
+      "line": "Para Ellos",
+      "description": "Maletín funcional con compartimentos para facilitar el transporte de documentos y dispositivos electrónicos.",
+      "image": "Travelv1"
+    },
+    {
+      "name": "Travel",
+      "category": "Morrales",
+      "line": "Para Ellos",
+      "description": "Mochila ideal para viajes, con un diseño práctico que asegura comodidad y espacio para tus pertenencias.",
+      "image": "Travelv1"
+    },
+    {
+      "name": "Urbano",
+      "category": "Morrales",
+      "line": "Para Ellos",
+      "description": "Mochila moderna y versátil, perfecta para el uso diario y diseñada para adaptarse a cualquier estilo de vida.",
+      "image": "Urbanov1"
+    },
+    {
+      "name": "Desk Pad",
+      "category": "Pads",
+      "line": "Catalogo Corporativo",
+      "description": "Un pad de escritorio funcional que añade un toque de elegancia a tu espacio de trabajo, ideal para organizar tus notas.",
+      "image": "Deskpad1"
+    },
+    {
+      "name": "Mouse Pad",
+      "category": "Pads",
+      "line": "Catalogo Corporativo",
+      "description": "Mouse pad ergonómico que ofrece una superficie suave para una experiencia de uso cómoda y eficiente.",
+      "image": "MousePadv1"
+    },
+    {
+      "name": "Porta Pasaporte",
+      "category": "Porta Documentos",
+      "line": "Catalogo Corporativo",
+      "description": "Porta pasaporte elegante que asegura la protección de tus documentos esenciales durante tus viajes.",
+      "image": "PortaPasaportev1"
+    },
+    {
+      "name": "Tarjeteros",
+      "category": "Porta Documentos",
+      "line": "Linea Ecotote",
+      "description": "Tarjetero ecológico que combina estilo y sostenibilidad, perfecto para mantener tus tarjetas organizadas.",
+      "image": "Tarjeterosv1"
+    },
+    {
+      "name": "Travelers",
+      "category": "Pads",
+      "line": "Ecologicos",
+      "description": "Un pad ecológico diseñado para los amantes de la naturaleza, ideal para tomar notas de forma responsable.",
+      "image": "MousePadv1"
+    },
+    {
+      "name": "Essential",
+      "category": "Ecologicos",
+      "line": "Linea Ecotote",
+      "description": "Producto ecológico diseñado para el día a día, ofreciendo funcionalidad y un compromiso con el medio ambiente.",
+      "image": "PortaPasaportev1"
+    },
+    {
+      "name": "Tote",
+      "category": "Ecologicos",
+      "line": "Linea Ecotote",
+      "description": "Bolsa tote ecológica que combina estilo y funcionalidad, perfecta para tus compras diarias y actividades cotidianas.",
+      "image": "Tarjeterosv1"
+    }
+  ],
   "contact_info": {
-    "email": "micorreo@gmail.com",
+    "email": "artesanodesign20@gmail.com",
     "phone": "+4 4123456",
-    "cellphone": "+591 1234567",
-    "address": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "cellphone": "+591 63336230",
+    "address": "Santa Cruz de la Sierra, Bolivia",
     "facebookLink": "https://www.facebook.com/artesano.design.bolivia",
     "instagramLink": "https://www.instagram.com/artesano.design.bolivia",
     "tiktokLink": "https://www.tiktok.com/@artesano.design"
