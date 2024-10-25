@@ -33,7 +33,7 @@ const ProductsSection = ({ products }) => {
           <AdCard
             key={index}
             type="line"
-            src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/category/${product.category}`}
+            src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/category/${product.category.toLowerCase()}`}
             title={product.category}
             onClick={() => handleProductClick(product.category)}
           />
