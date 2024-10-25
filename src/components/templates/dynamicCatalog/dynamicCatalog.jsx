@@ -48,11 +48,11 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
         {categoryName === "all" ? <></> : <h2>{categoryName}</h2>}
         <Row>
           {filteredProducts.map((product, index) => (
-            <Col key={index} xs={6} lg={4}>
+            <Col key={index} sm={6} md={6} xl={4} className="ad-dinamic-catalog-justify-content">
               <AdCard
                 type="product"
                 src={
-                  `https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.name.toLowerCase()}/1`}
+                  `https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
                 title={product.name}
                 onClick={() => handleProductClick(product.name)}
               />

@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Footer from "../../organism/footer/footer";
-import Image from "../../atoms/image/image";
+import AdImage from "../../atoms/AdImage/AdImage";
 
 const Product = ({ products_info, footer_info }) => {
   const { productName } = useParams();
@@ -24,8 +24,8 @@ const Product = ({ products_info, footer_info }) => {
       <Container className="ad-product-container">
         <Row>
           <Col xs={12} lg={6}>
-            <Image
-              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.name.toLowerCase()}/1`}
+            <AdImage
+              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
               ad_className="ad-img-product"
             />
           </Col>

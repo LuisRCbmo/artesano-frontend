@@ -2,14 +2,14 @@ import React from "react";
 
 
 import Carousel from "react-bootstrap/Carousel";
-import Image from "../../atoms/image/image";
+import AdImage from "../../atoms/AdImage/AdImage";
 
 const AdCarousel = ({carouselItems}) => {
   return (
     <Carousel fade={true}>
       {carouselItems.map((item, index) => (
         <Carousel.Item key={index}>
-          <Image
+          <AdImage
             src={item.src}
             ad_className=""
             alt={`Imagen #${index + 1}`}

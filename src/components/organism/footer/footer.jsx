@@ -5,10 +5,11 @@ import {
   Instagram,
   Tiktok,
   Whatsapp,
-  Telephone,
   Envelope,
   GeoAlt,
 } from "react-bootstrap-icons";
+
+import AdImage from "../../atoms/AdImage/AdImage";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -19,7 +20,6 @@ const footer = ({footer_Info}) => {
 
   const {
     email,
-    phone,
     cellphone,
     address,
     facebookLink,
@@ -32,20 +32,16 @@ const footer = ({footer_Info}) => {
       <Container fluid>
         <Row>
           <Col className="ad-footer-col-1" xs={12} lg={3}>
-            <h3>Logo</h3>
+            <AdImage src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/logo-white" ad_className="ad-img-logo-footer"/>
           </Col>
           <Col className="ad-footer-col-1" xs={12} lg={6}>
             <h3>Información y contacto</h3>
             <Row>
-              <Col className="ad-footer-col-2" xs={12} xl={4}>
+              <Col className="ad-footer-col-2" xs={12} xl={6}>
                 <Whatsapp size={icon_size} color="currentColor" />
                 <span className="ad-footer-p">Whatsapp: {cellphone}</span>
               </Col>
-              <Col className="ad-footer-col-2" xs={12} xl={4}>
-                <Telephone size={icon_size} color="currentColor" />
-                <span className="ad-footer-p">Teléfono: {phone}</span>
-              </Col>
-              <Col className="ad-footer-col-2" xs={12} xl={4}>
+              <Col className="ad-footer-col-2" xs={12} xl={6}>
                 <Envelope size={icon_size} color="currentColor" />
                 <span className="ad-footer-p">Correo: {email}</span>
               </Col>

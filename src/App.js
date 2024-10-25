@@ -69,7 +69,7 @@ function App() {
   const navItemsDynamic = filteredLines.map((line) => ({
     title: line.name,
     items: [
-      { name: "Todos los productos" },
+      { name: "Ver catalogo" },
       ...line.categories.map((category) => ({
         name: category,
       })),

@@ -55,7 +55,7 @@ const AdNavbar = ({ navItems }) => {
                         onClick={() =>
                           handleProductClick(
                             navGroup.title,
-                            item.name === "Todos los productos"
+                            item.name === "Ver catalogo"
                               ? "all"
                               : item.name
                           )

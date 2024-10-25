@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./ProductsSection.scss";
 
 import { useNavigate } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
+import AdSlider from "../../molecules/AdSlider/AdSlider";
 import AdCard from "../../molecules/AdCard/AdCard";
 
 const ProductsSection = ({ products }) => {
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      const width = window.innerWidth;
+
+      if (width < 992) {
+        setItemsPerPage(1);
+      } else if (width >= 992 && width < 1400) {
+        setItemsPerPage(2);
+      } else if (width > 1400) {
+        setItemsPerPage(3);
+      }
+    };
+
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
+
   const navigate = useNavigate();
 
   const handleProductClick = (categoryName) => {
@@ -19,26 +39,26 @@ const ProductsSection = ({ products }) => {
 
   return (
     <Container className="ad-products-section-container">
-      <h1>Productos</h1>
+      <h1>Nuestros Productos</h1>
       <p>
-      Nuestra colección de productos abarca una amplia variedad de accesorios de cuero, 
-  diseñados para combinar estilo y funcionalidad. Desde carteras y mochilas, hasta 
-  artículos personalizados para el día a día, cada pieza está hecha con materiales de 
-  la más alta calidad y cuidada atención a los detalles. Explora nuestras categorías 
-  y encuentra el accesorio perfecto que se adapte a tu estilo.
+        Nuestra colección de productos abarca una amplia variedad de accesorios
+        de cuero, diseñados para combinar estilo y funcionalidad. Desde carteras
+        y mochilas, hasta artículos personalizados para el día a día, cada pieza
+        está hecha con materiales de la más alta calidad y cuidada atención a
+        los detalles. Explora nuestras categorías y encuentra el accesorio
+        perfecto que se adapte a tu estilo.
       </p>
-      <Row>
+      <AdSlider settings={{ slidesToShow: itemsPerPage }}>
         {products.map((product, index) => (
-          <Col key={index} xs={6} lg={4}>
-            <AdCard
-              type="product"
-              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/category/${product.category.toLowerCase()}`}
-              title={product.category}
-              onClick={() => handleProductClick(product.category)}
-            />
-          </Col>
+          <AdCard
+            key={index}
+            type="line"
+            src=""
+            title={product.category}
+            onClick={() => handleProductClick(product.category)}
+          />
         ))}
-      </Row>
+      </AdSlider>
     </Container>
   );
 };
