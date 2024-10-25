@@ -32,7 +32,7 @@ const LinesSection = ({ lines }) => {
           <AdCard
             key={index}
             type="line"
-            src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/line/${line.name.replace(/ /g, "").toLowerCase()}`}
+            src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/line/${line.name.replace(/ /g, "").toLowerCase()}?updated=${Date.now()}`}
             title={line.name}
             onClick={() => handleProductClick(line.name)}
           />
