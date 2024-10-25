@@ -14,6 +14,22 @@ function AdSlider({ children, settings }) {
     speed: 500,
     responsive: [
       {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "65px",
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "50px",
+          infinite: true
+        }
+      },
+      {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
