@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./AdNavbar.scss";
 
@@ -11,9 +11,16 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 const AdNavbar = ({ navItems }) => {
   const navigate = useNavigate();
+  const [expanded, setExpanded] = useState(false);
 
   const handleProductClick = (lineName, categoryName) => {
     navigate(`/line/${lineName}/category/${categoryName}`);
+    setExpanded(false);
+  };
+
+  const handleNavClick = (route) => {
+    navigate(route);
+    setExpanded(false); // Cierra el navbar después de navegar
   };
 
   return (
@@ -23,6 +30,7 @@ const AdNavbar = ({ navItems }) => {
       data-bs-theme="dark"
       className="bg-body-dark"
       sticky="top"
+      expanded={expanded}
     >
       <Container>
         <Navbar.Brand className="ad-navbar-movile-hide">
@@ -33,7 +41,10 @@ const AdNavbar = ({ navItems }) => {
           />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        />
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="ad-navbar-center-content"
@@ -55,9 +66,7 @@ const AdNavbar = ({ navItems }) => {
                         onClick={() =>
                           handleProductClick(
                             navGroup.title,
-                            item.name === "Ver catalogo"
-                              ? "all"
-                              : item.name
+                            item.name === "Ver catalogo" ? "all" : item.name
                           )
                         }
                       >
@@ -72,7 +81,7 @@ const AdNavbar = ({ navItems }) => {
                   className="ad-navbar-item-light
                   ad-navbar-text-start"
                   key={index}
-                  onClick={() => navigate(navGroup.route)}
+                  onClick={() => handleNavClick(navGroup.route)}
                 >
                   {navGroup.name}
                 </Nav.Link>

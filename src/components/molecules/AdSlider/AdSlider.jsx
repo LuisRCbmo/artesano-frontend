@@ -7,17 +7,17 @@ function AdSlider({ children, settings }) {
   const defaultSettings = {
     accessibility: true,
     className: "center",
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
     centerMode: true,
+    infinite: true,
     speed: 500,
+    slidesToShow: 3,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          centerPadding: "65px",
+          centerPadding: "15px",
           infinite: true
         }
       },
@@ -25,7 +25,7 @@ function AdSlider({ children, settings }) {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerPadding: "50px",
+          centerPadding: "100px",
           infinite: true
         }
       },

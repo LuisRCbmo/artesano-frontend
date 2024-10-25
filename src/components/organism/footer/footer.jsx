@@ -35,7 +35,7 @@ const footer = ({footer_Info}) => {
             <AdImage src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/logo-white" ad_className="ad-img-logo-footer"/>
           </Col>
           <Col className="ad-footer-col-1" xs={12} lg={6}>
-            <h3>Información y contacto</h3>
+            <h2>Información y contacto</h2>
             <Row>
               <Col className="ad-footer-col-2" xs={12} xl={6}>
                 <Whatsapp size={icon_size} color="currentColor" />
@@ -52,7 +52,7 @@ const footer = ({footer_Info}) => {
             </Row>
           </Col>
           <Col className="ad-footer-col-1" xs={12} lg={3}>
-            <h3>Redes sociales</h3>
+            <h2>Redes sociales</h2>
             <Container  className="ad-footer-icons-container" fluid>
               <Row className="ad-footer-icons-row">
                 <Col className="ad-footer-col-2">

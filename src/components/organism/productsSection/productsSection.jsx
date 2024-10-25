@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./ProductsSection.scss";
 
@@ -10,26 +10,6 @@ import AdSlider from "../../molecules/AdSlider/AdSlider";
 import AdCard from "../../molecules/AdCard/AdCard";
 
 const ProductsSection = ({ products }) => {
-  const [itemsPerPage, setItemsPerPage] = useState(1);
-
-  useEffect(() => {
-    const updateItemsPerPage = () => {
-      const width = window.innerWidth;
-
-      if (width < 992) {
-        setItemsPerPage(1);
-      } else if (width >= 992 && width < 1400) {
-        setItemsPerPage(2);
-      } else if (width > 1400) {
-        setItemsPerPage(3);
-      }
-    };
-
-    updateItemsPerPage();
-    window.addEventListener("resize", updateItemsPerPage);
-
-    return () => window.removeEventListener("resize", updateItemsPerPage);
-  }, []);
 
   const navigate = useNavigate();
 
@@ -40,7 +20,7 @@ const ProductsSection = ({ products }) => {
   return (
     <Container className="ad-products-section-container">
       <h1>Nuestros Productos</h1>
-      <p>
+      <p className="ad-products-section-p">
         Nuestra colección de productos abarca una amplia variedad de accesorios
         de cuero, diseñados para combinar estilo y funcionalidad. Desde carteras
         y mochilas, hasta artículos personalizados para el día a día, cada pieza
@@ -48,12 +28,12 @@ const ProductsSection = ({ products }) => {
         los detalles. Explora nuestras categorías y encuentra el accesorio
         perfecto que se adapte a tu estilo.
       </p>
-      <AdSlider settings={{ slidesToShow: itemsPerPage }}>
+      <AdSlider>
         {products.map((product, index) => (
           <AdCard
             key={index}
             type="line"
-            src=""
+            src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/category/${product.category}`}
             title={product.category}
             onClick={() => handleProductClick(product.category)}
           />

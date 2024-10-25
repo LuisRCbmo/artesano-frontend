@@ -35,56 +35,56 @@
 
   "products_info": [
     {
-      "name": "Wonder",
+      "name": "Cartera Wonder",
       "category": "Carteras",
       "line": "Para Ellas",
       "description": "Una cartera elegante y versátil que se adapta a cualquier ocasión, perfecta para llevar tus esenciales con estilo.",
       "image": "Wonderv1"
     },
     {
-      "name": "Freedom",
+      "name": "Cartera Freedom",
       "category": "Carteras",
       "line": "Para Ellas",
       "description": "Cartera compacta con un diseño moderno que combina funcionalidad y elegancia, ideal para el día a día.",
       "image": "Freedomv1"
     },
     {
-      "name": "Freedom De Luxe",
+      "name": "Cartera Freedom De Luxe",
       "category": "Carteras",
       "line": "Para Ellas",
       "description": "Una versión de lujo de la clásica Freedom, elaborada con materiales de alta calidad para un toque sofisticado.",
       "image": "Freedom De Luxev1"
     },
     {
-      "name": "Clasica",
+      "name": "Cartera Clasica",
       "category": "Carteras",
       "line": "Para Ellas",
       "description": "La cartera ideal para quienes buscan un estilo atemporal, combinando diseño clásico con comodidad.",
       "image": "Clasica v1"
     },
     {
-      "name": "Ejecutivo",
+      "name": "Maletin Ejecutivo",
       "category": "Maletines",
       "line": "Para Ellos",
       "description": "Maletín elegante y profesional, diseñado para el hombre moderno que necesita organización y estilo.",
       "image": "Ejecutivov1"
     },
     {
-      "name": "Travel",
+      "name": "Maletin Travel",
       "category": "Maletines",
       "line": "Para Ellos",
       "description": "Maletín funcional con compartimentos para facilitar el transporte de documentos y dispositivos electrónicos.",
       "image": "Travelv1"
     },
     {
-      "name": "Travel",
+      "name": "Morral Travel",
       "category": "Morrales",
       "line": "Para Ellos",
       "description": "Mochila ideal para viajes, con un diseño práctico que asegura comodidad y espacio para tus pertenencias.",
       "image": "Travelv1"
     },
     {
-      "name": "Urbano",
+      "name": "Morral Urbano",
       "category": "Morrales",
       "line": "Para Ellos",
       "description": "Mochila moderna y versátil, perfecta para el uso diario y diseñada para adaptarse a cualquier estilo de vida.",
