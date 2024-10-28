@@ -22,10 +22,9 @@ const ContactPage = ({ contact_info }) => {
       <Container>
         <h1>Contáctanos</h1>
         <iframe
+          className="contact-page-iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.6917621759612!2d-63.16805455484356!3d-17.709588887671952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7b1919c42e9%3A0xcbb85e96c457da35!2sArtesano%20Design!5e0!3m2!1ses!2sbo!4v1730155239552!5m2!1ses!2sbo"
-          width="600"
-          height="450"
-          allowfullscreen=""
+
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
