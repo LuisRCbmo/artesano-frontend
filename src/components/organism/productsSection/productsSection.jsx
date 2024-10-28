@@ -10,7 +10,6 @@ import AdSlider from "../../molecules/AdSlider/AdSlider";
 import AdCard from "../../molecules/AdCard/AdCard";
 
 const ProductsSection = ({ products }) => {
-
   const navigate = useNavigate();
 
   const handleProductClick = (categoryName) => {
@@ -21,12 +20,8 @@ const ProductsSection = ({ products }) => {
     <Container className="ad-products-section-container">
       <h1>Nuestros Productos</h1>
       <p className="ad-products-section-p">
-        Nuestra colección de productos abarca una amplia variedad de accesorios
-        de cuero, diseñados para combinar estilo y funcionalidad. Desde carteras
-        y mochilas, hasta artículos personalizados para el día a día, cada pieza
-        está hecha con materiales de la más alta calidad y cuidada atención a
-        los detalles. Explora nuestras categorías y encuentra el accesorio
-        perfecto que se adapte a tu estilo.
+        Nuestra colección de accesorios combina estilo y funcionalidad con
+        materiales de alta calidad y atención a los detalles.
       </p>
       <AdSlider>
         {products.map((product, index) => (
