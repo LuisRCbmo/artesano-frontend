@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./ProductsSection.scss";
+import "./productsSection.scss";
 
 import { useNavigate } from "react-router-dom";
 
