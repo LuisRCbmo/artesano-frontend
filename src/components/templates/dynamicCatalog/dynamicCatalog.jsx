@@ -34,9 +34,22 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
     return lineMatch && categoryMatch;
   });
 
+  const lineBackgroundColors = {
+    "Para Ellas": "rgba(128, 0, 64, 0.1)",
+    "Para Ellos": "rgba(0, 64, 128, 0.1)", 
+    "Catalogo Corporativo": "rgba(64, 64, 64,0.1)", 
+    "Linea Ecotote": "rgba(0, 128, 64, 0.1)",
+  };
+
+  const backgroundColor =
+    lineName !== "all" ? lineBackgroundColors[lineName] : "transparente";
+
   return (
     <>
-      <Container className="ad-dinamic-catalog-container">
+      <Container
+        className="ad-dinamic-catalog-container"
+        style={{ backgroundColor }}
+      >
         {lineName === "all" ? (
           <></>
         ) : (
@@ -48,11 +61,16 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
         {categoryName === "all" ? <></> : <h2>{categoryName}</h2>}
         <Row>
           {filteredProducts.map((product, index) => (
-            <Col key={index} sm={6} md={6} xl={4} className="ad-dinamic-catalog-justify-content">
+            <Col
+              key={index}
+              sm={6}
+              md={6}
+              xl={4}
+              className="ad-dinamic-catalog-justify-content"
+            >
               <AdCard
                 type="product"
-                src={
-                  `https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
+                src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
                 title={product.name}
                 onClick={() => handleProductClick(product.name)}
               />

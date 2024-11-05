@@ -6,6 +6,7 @@ import LandingPage from "./components/templates/landingPage/landingPage";
 import DynamicCatalog from "./components/templates/dynamicCatalog/dynamicCatalog";
 import Product from "./components/templates/product/product";
 import ContactPage from "./components/templates/contactPage/contactPage";
+import AboutUsPage from "./components/templates/AboutUsPage/AboutUsPage";
 import Spinner from "react-bootstrap/Spinner";
 
 function groupByLineAndType(products) {
@@ -78,11 +79,13 @@ function App() {
 
   const staticNavItems = [
     { name: "Inicio", route: "/" },
-    { name: "Contáctanos", route: "/contact" }
+    { name: "Contáctanos", route: "/contact" },
+    { name: "Conocenos", route: "/aboutus" }
   ];
 
   const navItemsWithStatic = [
     staticNavItems[0],
+    staticNavItems[2],
     ...navItemsDynamic,
     staticNavItems[1]
   ];
@@ -127,6 +130,10 @@ function App() {
           <Route
             path="/contact"
             element={<ContactPage contact_info={data.contact_info} />}
+          />
+          <Route
+            path="/aboutus"
+            element={<AboutUsPage />}
           />
         </Routes>
       </BrowserRouter>

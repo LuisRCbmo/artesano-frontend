@@ -2,7 +2,7 @@
   &-product {
     --bs-card-border-radius: 0px !important;
     --bs-card-inner-border-radius: 0px !important;
-    --bs-card-border-width: 0px !important;
+    --bs-card-border-width: 1px !important;
   
     width: 400px;
 
@@ -23,7 +23,7 @@
   &-line {
     --bs-card-border-radius: 0px !important;
     --bs-card-inner-border-radius: 0px !important;
-    --bs-card-border-width: 0px !important;
+    --bs-card-border-width: 1px !important;
   
     width: 375px;
 
