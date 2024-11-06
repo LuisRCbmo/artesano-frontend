@@ -67,14 +67,14 @@
       "category": "Maletines",
       "line": "Para Ellos",
       "description": "Maletín elegante y profesional, diseñado para el hombre moderno que necesita organización y estilo.",
-      "image": "Ejecutivov1"
+      "image": "maletinejecutivo"
     },
     {
       "name": "Maletin Travel",
       "category": "Maletines",
       "line": "Para Ellos",
       "description": "Maletín funcional con compartimentos para facilitar el transporte de documentos y dispositivos electrónicos.",
-      "image": "Travelv1"
+      "image": "maletintravel"
     },
     {
       "name": "Morral Travel",
