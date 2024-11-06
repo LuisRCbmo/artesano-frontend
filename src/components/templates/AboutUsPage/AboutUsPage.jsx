@@ -4,6 +4,7 @@ import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 import "./AboutUsPage.scss";
 
 import AdCarousel from "../../molecules/AdCarousel/AdCarousel";
+import CarouselSection from "../../organism/carouselSection/carouselSection";
 import AdImage from "../../atoms/AdImage/AdImage";
 
 import Footer from "../../organism/footer/footer";
@@ -30,7 +31,8 @@ const AbousUsPage = ({ footer_info }) => {
               </p>
             </Col>
             <Col md={12}>
-              <AdCarousel
+
+              <CarouselSection
                 xs_hide={true}
                 carouselItems={[
                   {
@@ -69,14 +71,14 @@ const AbousUsPage = ({ footer_info }) => {
                 alt={`Imagen`}
               />
             </Col>
-            <Col md={6} xs={12}>
+            <Col md={6} xs={12} className="ad-AboutUsPage-imgcol">
               <AdImage
                 src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/aboutus/details2"
                 ad_className=""
                 alt={`Imagen`}
               />
             </Col>
-            <Col md={6} xs={12}>
+            <Col md={6} xs={12}className="ad-AboutUsPage-imgcol">
               <p className="ad-AboutUsPage-p-justify">
                 Nos enfocamos en productos duraderos y personalizados, donde la
                 estética y la funcionalidad son primordiales. Desde carteras y
