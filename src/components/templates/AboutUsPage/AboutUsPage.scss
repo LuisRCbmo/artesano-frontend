@@ -4,5 +4,12 @@
     }
     &-p-justify {
         text-align: justify;
+        align-items: center;
+        height: 100%;
+        display: flex;
+        padding: 16px;
+    }
+    &-imgcol {
+        padding: 16px;
     }
 }

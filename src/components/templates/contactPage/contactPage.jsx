@@ -18,8 +18,7 @@ const ContactPage = ({ contact_info }) => {
   const icon_size = 24;
 
   return (
-    <div className="contact-page-container">
-      <Container>
+      <Container className="contact-page-container">
         <h1>Contáctanos</h1>
         <iframe
           className="contact-page-iframe"
@@ -70,7 +69,6 @@ const ContactPage = ({ contact_info }) => {
           </Col>
         </Row>
       </Container>
-    </div>
   );
 };
 

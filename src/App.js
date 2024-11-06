@@ -133,7 +133,8 @@ function App() {
           />
           <Route
             path="/aboutus"
-            element={<AboutUsPage />}
+            element={<AboutUsPage 
+              footer_info={data.contact_info}/>}
           />
         </Routes>
       </BrowserRouter>

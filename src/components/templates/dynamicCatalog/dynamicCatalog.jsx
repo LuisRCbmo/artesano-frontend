@@ -1,19 +1,14 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-
-import "./dynamicCatalog.scss";
-import { useNavigate } from "react-router-dom";
-
+import { useParams, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 import AdCard from "../../molecules/AdCard/AdCard";
 import Footer from "../../organism/footer/footer";
+import "./dynamicCatalog.scss";
 
 const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
   const { lineName, categoryName } = useParams();
-
   const navigate = useNavigate();
 
   const handleProductClick = (productName) => {
@@ -36,13 +31,13 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
 
   const lineBackgroundColors = {
     "Para Ellas": "rgba(128, 0, 64, 0.1)",
-    "Para Ellos": "rgba(0, 64, 128, 0.1)", 
-    "Catalogo Corporativo": "rgba(64, 64, 64,0.1)", 
+    "Para Ellos": "rgba(0, 64, 128, 0.1)",
+    "Catalogo Corporativo": "rgba(64, 64, 64, 0.1)",
     "Linea Ecotote": "rgba(0, 128, 64, 0.1)",
   };
 
   const backgroundColor =
-    lineName !== "all" ? lineBackgroundColors[lineName] : "transparente";
+    lineName !== "all" ? lineBackgroundColors[lineName] : "transparent";
 
   return (
     <>
@@ -50,19 +45,17 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
         className="ad-dinamic-catalog-container"
         style={{ backgroundColor }}
       >
-        {lineName === "all" ? (
-          <></>
-        ) : (
+        {lineName === "all" ? null : (
           <>
             <h1>{lineName}</h1>
-            <p>{line_descripction} </p>
+            <p>{line_descripction}</p>
           </>
         )}
-        {categoryName === "all" ? <></> : <h2>{categoryName}</h2>}
+        {categoryName === "all" ? null : <h2>{categoryName}</h2>}
         <Row>
           {filteredProducts.map((product, index) => (
             <Col
-              key={index}
+              key={`${product.name}-${lineName}-${categoryName}`}
               sm={6}
               md={6}
               xl={4}
@@ -70,7 +63,7 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
             >
               <AdCard
                 type="product"
-                src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
+                src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}`}
                 title={product.name}
                 onClick={() => handleProductClick(product.name)}
               />

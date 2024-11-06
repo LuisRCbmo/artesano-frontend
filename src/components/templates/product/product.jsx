@@ -25,7 +25,7 @@ const Product = ({ products_info, footer_info }) => {
         <Row>
           <Col xs={12} lg={6}>
             <AdImage
-              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}/1`}
+              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}`}
               ad_className="ad-img-product"
             />
           </Col>
