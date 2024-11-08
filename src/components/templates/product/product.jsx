@@ -21,6 +21,12 @@ const Product = ({ products_info, contact_info }) => {
     return <h2>Producto no encontrado</h2>;
   }
 
+  const handleWhatsAppClick = () => {
+    const message = `Hola!! estoy interesado en el producto "${product.name}"`;
+    const whatsappUrl = `https://wa.me/${cellphone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");  // Abre la URL en una nueva pestaña
+  };
+
   return (
     <>
       <Container className="ad-product-container">
@@ -43,8 +49,8 @@ const Product = ({ products_info, contact_info }) => {
                 : product.line}
             </p>
             <AdButton
-              content={"Conocenos"}
-              onClick={`https://wa.me/${cellphone}?text=${encodeURIComponent(`Hola!! estoy interesado en el producto "${product.name}"`)}`}
+              content={"Preguntar via whastapp"}
+              onClick={() => handleWhatsAppClick()}
             />
           </Col>
         </Row>
