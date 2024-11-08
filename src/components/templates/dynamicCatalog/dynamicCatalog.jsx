@@ -30,10 +30,10 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
   });
 
   const lineBackgroundColors = {
-    "Para Ellas": "rgba(128, 0, 64, 0.1)",
-    "Para Ellos": "rgba(0, 64, 128, 0.1)",
+    "Para Ellas": "rgba(102, 51, 102, 0.1)", 
+    "Para Ellos": "rgba(0, 38, 77, 0.1)", 
     "Catalogo Corporativo": "rgba(64, 64, 64, 0.1)",
-    "Linea Ecotote": "rgba(0, 128, 64, 0.1)",
+    "Linea Ecotote": "rgba(34, 139, 34, 0.1)",
   };
 
   const backgroundColor =

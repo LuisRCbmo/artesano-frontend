@@ -17,7 +17,7 @@ const AdCard = ({ type, src, title, onClick }) => {
   return (
     <Card className={`ad-card-${type}`}>
       <Card.Img
-        src={primarySrc}
+        src={`${primarySrc}?updated=${Date.now()}`}
         onError={handleError}
         alt="imagen de producto"
         className={`ad-card-${type}-img`}

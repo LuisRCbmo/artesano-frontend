@@ -123,7 +123,7 @@ function App() {
             element={
               <Product
                 products_info={data.products_info}
-                footer_info={data.contact_info}
+                contact_info={data.contact_info}
               />
             }
           />
