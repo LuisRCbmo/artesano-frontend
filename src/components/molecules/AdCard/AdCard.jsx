@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./AdCard.scss";
 
+import AdButton from "../../atoms/AdButton/AdButton";
 import Card from "react-bootstrap/Card";
 
 const AdCard = ({ type, src, title, onClick }) => {
@@ -22,7 +23,9 @@ const AdCard = ({ type, src, title, onClick }) => {
         className={`ad-card-${type}-img`}
       />
       <Card.Body>
-        <Card.Text onClick={onClick}>{title}</Card.Text>
+        <AdButton 
+          content={title}
+          onClick={onClick}/>
       </Card.Body>
     </Card>
   );

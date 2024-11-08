@@ -1,14 +1,13 @@
 import React from "react";
 
 import "./landingPage.scss";
-
 import CarouselSection from "../../organism/carouselSection/carouselSection";
 import ProductsSection from "../../organism/productsSection/productsSection";
 import LinesSection from "../../organism/linesSection/linesSection";
 import Footer from "../../organism/footer/footer";
-import { Container } from "react-bootstrap";
+import Welcome from "../../organism/Welcome/Welcome";
 
-const landingPage = ({
+const LandingPage = ({
   carouselItems_info,
   productTypes_info,
   lines_info,
@@ -16,13 +15,7 @@ const landingPage = ({
 }) => {
   return (
     <>
-      <h1>Artesano Design</h1>
-      <p className="ad-landingPage-p">
-        Creamos productos de cuero que combinan lo mejor de la tradición
-        artesanal y el diseño moderno. Cada pieza es elaborada con dedicación
-        reflejando nuestro compromiso con la calidad, durabilidad y el cuidado
-        de los detalles.
-      </p>
+      <Welcome />
       <CarouselSection carouselItems={carouselItems_info} xs_hide={true} />
       <LinesSection lines={lines_info} />
       <ProductsSection products={productTypes_info} />
@@ -31,4 +24,4 @@ const landingPage = ({
   );
 };
 
-export default landingPage;
+export default LandingPage;
