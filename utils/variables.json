@@ -70,25 +70,18 @@
       "image": "maletinejecutivo"
     },
     {
-      "name": "Maletin Travel",
-      "category": "Maletines",
-      "line": "Para Ellos",
-      "description": "Maletín funcional con compartimentos para facilitar el transporte de documentos y dispositivos electrónicos.",
-      "image": "maletintravel"
-    },
-    {
       "name": "Morral Travel",
       "category": "Morrales",
       "line": "Para Ellos",
       "description": "Mochila ideal para viajes, con un diseño práctico que asegura comodidad y espacio para tus pertenencias.",
-      "image": "Travelv1"
+      "image": "morraltravel"
     },
     {
       "name": "Morral Urbano",
       "category": "Morrales",
       "line": "Para Ellos",
       "description": "Mochila moderna y versátil, perfecta para el uso diario y diseñada para adaptarse a cualquier estilo de vida.",
-      "image": "Urbanov1"
+      "image": "morralurbano"
     },
     {
       "name": "Desk Pad",
