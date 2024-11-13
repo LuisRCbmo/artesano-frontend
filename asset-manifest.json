@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5406c2f.css",
-    "main.js": "/static/js/main.692bdc51.js",
+    "main.css": "/static/css/main.75154853.css",
+    "main.js": "/static/js/main.3bd52751.js",
+    "static/media/RooneySansLight.woff": "/static/media/RooneySansLight.9a77cd9d759b3cd3a315.woff",
     "static/media/Rondal-Regular.woff": "/static/media/Rondal-Regular.a06cdace022cca233f53.woff",
     "static/media/Rondal-Regular.woff2": "/static/media/Rondal-Regular.cbf6298af11b326071bc.woff2",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,11 +10,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.f5406c2f.css.map": "/static/css/main.f5406c2f.css.map",
-    "main.692bdc51.js.map": "/static/js/main.692bdc51.js.map"
+    "main.75154853.css.map": "/static/css/main.75154853.css.map",
+    "main.3bd52751.js.map": "/static/js/main.3bd52751.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5406c2f.css",
-    "static/js/main.692bdc51.js"
+    "static/css/main.75154853.css",
+    "static/js/main.3bd52751.js"
   ]
 }
