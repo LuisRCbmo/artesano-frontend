@@ -6,10 +6,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RooneySans';
+  src: url('./assets/fonts/RooneySansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;
-  font-family: 'Rondal', sans-serif !important;
+  font-family: 'RooneySans', sans-serif !important;
   font-size: 1.25rem !important;
   font-weight: 400 !important;
   -webkit-font-smoothing: antialiased;

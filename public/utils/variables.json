@@ -88,49 +88,42 @@
       "category": "Pads",
       "line": "Catalogo Corporativo",
       "description": "Un pad de escritorio funcional que añade un toque de elegancia a tu espacio de trabajo, ideal para organizar tus notas.",
-      "image": "Deskpad1"
+      "image": "deskpad"
     },
     {
       "name": "Mouse Pad",
       "category": "Pads",
       "line": "Catalogo Corporativo",
       "description": "Mouse pad ergonómico que ofrece una superficie suave para una experiencia de uso cómoda y eficiente.",
-      "image": "MousePadv1"
+      "image": "mousepad"
     },
     {
       "name": "Porta Pasaporte",
       "category": "Porta Documentos",
       "line": "Catalogo Corporativo",
       "description": "Porta pasaporte elegante que asegura la protección de tus documentos esenciales durante tus viajes.",
-      "image": "PortaPasaportev1"
+      "image": "portapasaporte"
     },
     {
       "name": "Tarjeteros",
       "category": "Porta Documentos",
-      "line": "Linea Ecotote",
+      "line": "Catalogo Corporativo",
       "description": "Tarjetero ecológico que combina estilo y sostenibilidad, perfecto para mantener tus tarjetas organizadas.",
-      "image": "Tarjeterosv1"
-    },
-    {
-      "name": "Travelers",
-      "category": "Pads",
-      "line": "Ecologicos",
-      "description": "Un pad ecológico diseñado para los amantes de la naturaleza, ideal para tomar notas de forma responsable.",
-      "image": "MousePadv1"
+      "image": "tarjeteros"
     },
     {
       "name": "Essential",
       "category": "Ecologicos",
       "line": "Linea Ecotote",
       "description": "Producto ecológico diseñado para el día a día, ofreciendo funcionalidad y un compromiso con el medio ambiente.",
-      "image": "PortaPasaportev1"
+      "image": "essential"
     },
     {
       "name": "Tote",
       "category": "Ecologicos",
       "line": "Linea Ecotote",
       "description": "Bolsa tote ecológica que combina estilo y funcionalidad, perfecta para tus compras diarias y actividades cotidianas.",
-      "image": "Tarjeterosv1"
+      "image": "tote"
     }
   ],
   "contact_info": {
