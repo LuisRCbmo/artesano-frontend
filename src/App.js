@@ -42,20 +42,67 @@ function getUniqueTypes(products) {
 
 function App() {
   const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/utils/variables.json")
-      .then((response) => response.json())
-      .then((jsonData) => setData(jsonData))
-      .catch((error) => console.error("Error loading JSON:", error));
+    Promise.all([
+      fetch("http://localhost:5000/api/carruselItem", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": process.env.REACT_APP_API_KEY, 
+        },
+      }).then((res) => res.json()),
+  
+      fetch("http://localhost:5000/api/lines", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }).then((res) => res.json()),
+  
+      fetch("http://localhost:5000/api/products", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }).then((res) => res.json()),
+  
+      fetch("http://localhost:5000/api/contact", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }).then((res) => res.json()),
+    ])
+      .then(([carouselItems, lines, products, contactInfo]) => {
+        setData({
+          carouselItems_info: carouselItems,
+          lines_info: lines,
+          products_info: products,
+          contact_info: contactInfo[0],
+        });
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data from backend:", error);
+        setLoading(false);
+      });
   }, []);
-
-  if (!data) {
+  
+  if (loading) {
     return (
       <Spinner animation="border" role="status">
         <span className="visually-hidden">Loading...</span>
       </Spinner>
     );
+  }
+
+  if (!data) {
+    return <div>Error loading data!</div>;
   }
 
   const groupedProducts = groupByLineAndType(data.products_info);
@@ -80,20 +127,23 @@ function App() {
   const staticNavItems = [
     { name: "Inicio", route: "/" },
     { name: "Contáctanos", route: "/contact" },
-    { name: "Conocenos", route: "/aboutus" }
+    { name: "Conocenos", route: "/aboutus" },
   ];
 
   const navItemsWithStatic = [
     staticNavItems[0],
     staticNavItems[2],
     ...navItemsDynamic,
-    staticNavItems[1]
+    staticNavItems[1],
   ];
-
+  
   return (
     <div className="App">
       <BrowserRouter>
-        <Header src={data.src_logo_header} navItems={navItemsWithStatic} />
+        <Header
+          src="/img/banner.png"
+          navItems={navItemsWithStatic}
+        />
         <Routes>
           <Route
             path="/"
@@ -133,8 +183,7 @@ function App() {
           />
           <Route
             path="/aboutus"
-            element={<AboutUsPage 
-              footer_info={data.contact_info}/>}
+            element={<AboutUsPage footer_info={data.contact_info} />}
           />
         </Routes>
       </BrowserRouter>

@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
+import { Container, Row, Col  } from "react-bootstrap";
 
 import "./AboutUsPage.scss";
 
-import AdCarousel from "../../molecules/AdCarousel/AdCarousel";
 import CarouselSection from "../../organism/carouselSection/carouselSection";
 import AdImage from "../../atoms/AdImage/AdImage";
 

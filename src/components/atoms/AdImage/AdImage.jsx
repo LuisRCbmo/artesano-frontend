@@ -7,14 +7,14 @@ const AdImage = ({ src, ad_className }) => {
   const [primarySrc, setPrimarySrc] = useState(src);
 
   const handleError = () => {
-    setPrimarySrc("https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/altv2");
+    setPrimarySrc("/img/placeholder.png");
   };
 
   return (
     <div>
       <Image
         src={primarySrc}
-        alt="Imagen"
+        alt="placehplder"
         onError={handleError}
         className={ad_className}
         fluid
