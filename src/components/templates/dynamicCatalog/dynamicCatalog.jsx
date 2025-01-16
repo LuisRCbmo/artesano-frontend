@@ -63,7 +63,7 @@ const DynamicCatalog = ({ products_info, lines_info, footer_info }) => {
             >
               <AdCard
                 type="product"
-                src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}`}
+                src={`/img/products/${product.image}`}
                 title={product.name}
                 onClick={() => handleProductClick(product.name)}
               />

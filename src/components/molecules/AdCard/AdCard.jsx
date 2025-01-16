@@ -9,24 +9,21 @@ const AdCard = ({ type, src, title, onClick }) => {
   const [primarySrc, setPrimarySrc] = useState(src);
 
   const handleError = () => {
-    setPrimarySrc(
-      "/img/placeholder.png"
-    );
+    setPrimarySrc("/img/placeholder.png");
   };
-
+console.log(onClick)
   return (
     <Card className={`ad-card-${type}`}>
-      <Card.Img
-        src={primarySrc}
-        onError={handleError}
-        alt="imagen de producto"
-        className={`ad-card-${type}-img`}
-      />
-      <Card.Body>
-        <AdButton 
-          content={title}
-          onClick={onClick}/>
-      </Card.Body>
+        <div className="add-card-img-container" onClick={onClick}>
+          <Card.Img
+            src={primarySrc}
+            onError={handleError}
+            alt="imagen de producto"
+            className="ad-card-img"
+          />
+          <div className="ad-card-img-button">Ver Catalogo</div>
+        </div>
+      <Card.Body>{title}</Card.Body>
     </Card>
   );
 };

@@ -24,7 +24,7 @@ const Product = ({ products_info, contact_info }) => {
   const handleWhatsAppClick = () => {
     const message = `Hola!! estoy interesado en el producto "${product.name}"`;
     const whatsappUrl = `https://wa.me/${cellphone}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");  // Abre la URL en una nueva pestaña
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -33,7 +33,7 @@ const Product = ({ products_info, contact_info }) => {
         <Row>
           <Col xs={12} lg={6}>
             <AdImage
-              src={`https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/products/${product.image.toLowerCase()}?updated=${Date.now()}`}
+              src={`/img/products/${product.image}`}
               ad_className="ad-img-product"
             />
           </Col>
