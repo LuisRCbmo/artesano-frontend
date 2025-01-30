@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import "./AdCard.scss";
 
-import AdButton from "../../atoms/AdButton/AdButton";
 import Card from "react-bootstrap/Card";
 
 const AdCard = ({ type, src, title, onClick }) => {

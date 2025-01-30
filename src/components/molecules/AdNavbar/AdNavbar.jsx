@@ -20,7 +20,7 @@ const AdNavbar = ({ navItems }) => {
 
   const handleNavClick = (route) => {
     navigate(route);
-    setExpanded(false); // Cierra el navbar después de navegar
+    setExpanded(false);
   };
 
   return (
@@ -33,7 +33,7 @@ const AdNavbar = ({ navItems }) => {
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand className="ad-navbar-movile-hide">
+        <Navbar.Brand>
           <img
             src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/logo-white"
             alt="Logo"
