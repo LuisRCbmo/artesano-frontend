@@ -25,6 +25,7 @@
   &-line {
     overflow: hidden !important;
     transition: box-shadow 0.3s ease;
+    transition: zoom 0.4 ease;
     --bs-card-border-radius: 0px !important;
     --bs-card-inner-border-radius: 0px !important;
     --bs-card-border-width: 1px !important;
@@ -48,12 +49,18 @@
 }
 
 .ad-card {
+  transition: zoom 0.4 ease;
+  zoom: 1.05;
   &-product:hover {
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+    transition: zoom 0.4 ease;
+    zoom: 1.05;
   }
 
   &-line:hover {
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+    transition: zoom 0.4 ease;
+    zoom: 1.05;
   }
 }
 

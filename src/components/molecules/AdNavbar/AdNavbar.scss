@@ -6,11 +6,15 @@
   }
 
   &-center-content {
-    justify-content: center;
+    justify-content: right;
   }
 
   &-item-light {
     --bs-nav-link-color: white;
+  }
+
+  &-border-rigth {
+    border-right: 2px groove white !important;
   }
 
   &-text-start {

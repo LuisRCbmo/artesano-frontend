@@ -16,7 +16,7 @@ const AbousUsPage = ({ footer_info }) => {
           <h2>Tradición y Modernidad en Marroquinería</h2>
           <Row>
             <Col md={12}>
-              <p className="ad-AboutUsPage-p-justify">
+              <p className="ad-AboutUsPage-p-center">
                 Somos un taller especializado en la creación de productos de
                 marroquinería de alta calidad, combinando la tradición artesanal
                 con un toque moderno. Cada pieza es cuidadosamente elaborada con
@@ -55,7 +55,7 @@ const AbousUsPage = ({ footer_info }) => {
           <h2>Cuidamos los Detalles</h2>
           <Row>
             <Col md={6} xs={12}>
-              <p className="ad-AboutUsPage-p-justify">
+              <p className="ad-AboutUsPage-p-center">
                 Desde las costuras hasta el sellado y los grabados
                 personalizados, en Artesano Design cuidamos cada aspecto de
                 nuestros productos. Nuestra dedicación a los detalles asegura
@@ -78,7 +78,7 @@ const AbousUsPage = ({ footer_info }) => {
               />
             </Col>
             <Col md={6} xs={12}className="ad-AboutUsPage-imgcol">
-              <p className="ad-AboutUsPage-p-justify">
+              <p className="ad-AboutUsPage-p-center">
                 Nos enfocamos en productos duraderos y personalizados, donde la
                 estética y la funcionalidad son primordiales. Desde carteras y
                 mochilas hasta piezas corporativas, cuidamos cada detalle en el

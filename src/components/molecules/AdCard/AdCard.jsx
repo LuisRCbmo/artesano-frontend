@@ -8,7 +8,7 @@ const AdCard = ({ type, src, title, onClick }) => {
   const [primarySrc, setPrimarySrc] = useState(src);
 
   const handleError = () => {
-    setPrimarySrc("/img/placeholder.png");
+    setPrimarySrc("/img/placeholder32.png");
   };
 console.log(onClick)
   return (

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-
 import "./AdNavbar.scss";
-
 import { useNavigate } from "react-router-dom";
-
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -37,7 +34,7 @@ const AdNavbar = ({ navItems }) => {
           <img
             src="https://res.cloudinary.com/dfjkvn1q4/image/upload/f_auto,q_auto/v1/Artesano%20design/logo-white"
             alt="Logo"
-            style={{ width: "200px", height: "auto" }}
+            style={{ width: "200px", height: "auto", margin:'16px'}}
           />
         </Navbar.Brand>
 
@@ -49,37 +46,44 @@ const AdNavbar = ({ navItems }) => {
           id="basic-navbar-nav"
           className="ad-navbar-center-content"
         >
-          <Nav className="">
+          <Nav>
             {navItems.map((navGroup, index) => {
               if (navGroup.items) {
                 return (
                   <NavDropdown
                     title={navGroup.title}
                     id={`nav-dropdown-${index}`}
-                    className="ad-navbar-item-light
-                    ad-navbar-text-start"
+                    className="ad-navbar-item-light ad-navbar-text-start"
                     key={index}
                   >
-                    {navGroup.items.map((item, itemIndex) => (
-                      <NavDropdown.Item
-                        key={itemIndex}
-                        onClick={() =>
-                          handleProductClick(
-                            navGroup.title,
-                            item.name === "Ver catalogo" ? "all" : item.name
-                          )
-                        }
-                      >
-                        {item.name}
-                      </NavDropdown.Item>
-                    ))}
+                    {navGroup.items.map((item, itemIndex) => {
+                      const isLastItem = itemIndex === navGroup.items.length - 1;
+                      return (
+                        <NavDropdown.Item
+                          key={itemIndex}
+                          className={`ad-navbar-item-light ad-navbar-text-start"
+                          }`}
+                          onClick={() =>
+                            handleProductClick(
+                              navGroup.title,
+                              item.name === "Ver catalogo" ? "all" : item.name
+                            )
+                          }
+                        >
+                          {item.name}
+                        </NavDropdown.Item>
+                      );
+                    })}
                   </NavDropdown>
                 );
               }
+
+              const isLastNavGroup = index === navItems.length - 1;
               return (
                 <Nav.Link
-                  className="ad-navbar-item-light
-                  ad-navbar-text-start"
+                  className={`ad-navbar-item-light ad-navbar-text-start ${
+                    isLastNavGroup ? "" : "ad-navbar-border-rigth"
+                  }`}
                   key={index}
                   onClick={() => handleNavClick(navGroup.route)}
                 >

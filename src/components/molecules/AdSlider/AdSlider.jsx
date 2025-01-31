@@ -56,6 +56,8 @@ function AdSlider({ children, settings }) {
     ],
     ...settings,
   };
+  if (!children || children.length === 0) return null;
+  if (children.length === 1) return <div className="slider-single">{children}</div>;
 
   return (
     <div className="slider-container">
